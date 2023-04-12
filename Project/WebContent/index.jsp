@@ -23,11 +23,12 @@
 			
 			<a class="global-nav-link" href="index.jsp">홈</a>
 			<a class="global-nav-link" href="about.jsp">소개</a>
+			<a class="global-nav-link" href="fqa.jsp">자주하는질문</a>
 			<a class="global-nav-link" href="contact.jsp">고객센터</a>
-			<a class="global-nav-link" href="faq.jsp">자주묻는질문</a>
 		</div>
 	</nav>
 
+    <!-- 외부파일 JS -->
 	<script src="./main.js"></script>
 </body>
 </html>
