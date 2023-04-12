@@ -27,6 +27,55 @@
 			<a class="global-nav-link" href="contact.jsp">고객센터</a>
 		</div>
 	</nav>
+	
+	<!-- section0 -->
+	<section class="section0">
+		<!-- contents -->
+		<div class="section0-contents">
+			<div>
+				<p>같이 여행갈 친구가 없다면,</p>
+				<p>새로운 여행메이트를 원한다면,</p>
+				<p>Let's travel</p>
+			</div>
+			<img src="./image/icon.png">
+		</div>
+	</section>
+	
+	<!-- section1 -->
+	<section class="section1">
+		<!-- title -->
+		<div class="section1-title">
+			<h1>Let's travel에 오신 여러분 환영합니다</h1>
+		</div>
+		
+		<!-- contents -->
+		<div class="section1-contents">
+			<div>
+				<p>같이 여행갈 친구가 없다면,</p>
+				<p>새로운 여행메이트를 원한다면,</p>
+				<p>Let's travel</p>
+			</div>
+			<img src="./image/icon.png">
+		</div>
+	</section>
+	
+	<!-- section2 -->
+	<section class="section2">
+		<!-- title -->
+		<div class="section2-title">
+			<h1>Let's travel에 오신 여러분 환영합니다</h1>
+		</div>
+		
+		<!-- contents -->
+		<div class="section2-contents">
+			<div>
+				<p>같이 여행갈 친구가 없다면,</p>
+				<p>새로운 여행메이트를 원한다면,</p>
+				<p>Let's travel</p>
+			</div>
+			<img src="./image/icon.png">
+		</div>
+	</section>
 
     <!-- 외부파일 JS -->
 	<script src="./main.js"></script>

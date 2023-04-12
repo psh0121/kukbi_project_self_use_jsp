@@ -20,8 +20,8 @@ body {
 }
 
 nav {
-	/* fixed - 스크롤시에도 상단에 고정되도록 설정 */
-	position: fixed;
+	/* absolute - 스크롤시 자연스럽게 넘어갈 수 있도록 함 */
+	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -31,6 +31,10 @@ nav {
 nav a {
 	text-decoration: none;
 	color: black;
+}
+
+section {
+	border: 1px solid salmon;
 }
 
 .home-icon {
@@ -65,4 +69,36 @@ nav a {
 	font-size: 2.3rem;
 	font-weight: bold;
 	padding-left: 5px;
+}
+
+.section0 {
+	width: 100%;
+	padding-top: 70px;
+}
+
+.section1-title, .section2-title {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 5px;
+	border-bottom: 1px solid salmon;
+}
+
+.section0-contents {
+	/* flex - section0 내부 레이아웃 설정 */
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+
+/* 테스트코딩 */
+.section1, .section2 {
+    width: 100%;
+}
+
+.section1-contents, .section2-contents {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
 }
