@@ -29,15 +29,19 @@
 	</nav>
 	
 	<!-- section0 -->
+	<video src="./video/section0_road.mp4" muted loop autoplay></video>
 	<section class="section0">
 		<!-- contents -->
 		<div class="section0-contents">
-			<div>
-				<p>같이 여행갈 친구가 없다면,</p>
-				<p>새로운 여행메이트를 원한다면,</p>
-				<p>Let's travel</p>
+			<div class="section0-contents-messages">
+				<p class="section0-contents-message0">
+					같이 여행갈 친구가 없다면,<br>
+					새로운 여행메이트를 원한다면,
+				</p>
+				<p class="section0-contents-message1">Let's travel</p>
 			</div>
-			<img src="./image/icon.png">
+			
+			<img class="section0-contents-img" src="./image/icon.png">
 		</div>
 	</section>
 	
