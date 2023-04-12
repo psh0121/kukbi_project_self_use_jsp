@@ -1,5 +1,9 @@
 (() => {
 	
+	let currentScrollY = 0;		// 현재 scrollY 위치값
+	let currentSection = 0;		// 현재 섹션 위치
+	let sectionYOffset = 0;		// 현재 섹션에 따른 scrollY 상대값
+	
 	// sectionSet: n번째 섹션에 대한 정보집합
 	const sectionSet = [
 		// section0
@@ -14,16 +18,8 @@
 				],
 				img: document.querySelector('.section0-contents-img')
 			},
-			opacitySettingsValues: {	// 투명도 애니메이션 셋팅 값
-				message0_opacity_in: [0, 1],
-				message1_opacity_in: [0, 1],
-				img_opacity_in: [0, 1]
-			},
-			translateYSettingsValues: {	// 위치 애니메이션 셋팅 값
-				message0_translateY_in: [20, 0],
-				message1_translateY_in: [20, 0],
-				img_translateY_in: [20, 0]
-			}
+			opacitySettingsValue: [0, 1],
+			translateYSettingsValue: [20, 0]
 		},
 		
 		// section1
@@ -60,9 +56,47 @@
 		}
 	}
 	
+	// getCurrentSection: scrollY 위치에 따른 현재 섹션위치 구하기
+	// - parameter: x
+	// - return: 현재 섹션 위치
+	const getCurrentSection = function(){
+		let currentSection = 0;
+		let sum = 0;
+		let index = 0;
+		
+		for(let i = 0; i < sectionSet.length; i++){
+			sum += sectionSet[i].height;
+			
+			if(currentScrollY <= sum) {
+				currentSection = index;
+				break;
+			}
+			
+			index++;
+		}
+		
+		return currentSection;
+	}
+	
+	// getSectionYOffset: 현재 섹션 위치에 따른 scrollY의 상대값 구하기
+	// - parameter: x
+	// - return: 현재 섹션 위치에 따른 scrollY 상대값
+	const getSectionYOffset = function() {
+		let yOffset = currentScrollY;
+		
+		for(let i = 0; i < currentSection; i++){
+			yOffset -= sectionSet[i].height;
+		}
+		
+		return yOffset;
+	}
+	
+	// section0Animation: section0에서 발생되는 애니메이션
+	// - parameter: x
+	// - return: x
 	const section0Animation = function(){
-		let opValue = 0;
-		let yValue = 20;
+		let opValue = sectionSet[0].opacitySettingsValue[0];
+        let yValue = sectionSet[0].translateYSettingsValue[0];
 		let tid;
 		
 		tid = setInterval(() => {
@@ -76,7 +110,8 @@
 			sectionSet[0].elemInfo.img.style.transform = `translateY(${yValue}%)`;
 			yValue --;
 			
-			if((opValue >= 1) && (yValue <= 0)){
+			if((opValue >= sectionSet[0].opacitySettingsValue[1]) && 
+				(yValue <= sectionSet[0].translateYSettingsValue[1])){
 				clearInterval(tid);
 				opValue = 0;
 				yValue = 20;
@@ -84,11 +119,18 @@
 		}, 40);
 	}
 	
+	// loadAnimation: load된 이후에 발생될 애니메이션
+	// - parameter: x
+	// - return: x
+	const loadAnimation = function(){
+		section0Animation();
+	}
+	
 	// playAnimation: section에 맞는 애니메이션 실행
 	// - parameter: x
 	// - return: x
 	const playAnimation = function(){
-		section0Animation();
+
 	}
 	
 	/////////////////////////////////////////////
@@ -96,7 +138,21 @@
 	
 	// 로딩된 후에 발생되는 이벤트
 	window.addEventListener("load", () => {
+		currentScrollY = window.scrollY;
+		currentSection = getCurrentSection();
+		sectionYOffset = getSectionYOffset();
+		
 		setLayout();
+		loadAnimation();
+	})
+	
+	// 스크롤을 진행했을 시에 발생되는 이벤트
+	window.addEventListener("scroll", () => {
+		currentScrollY = window.scrollY;
+		currentSection = getCurrentSection();
+		sectionYOffset = getSectionYOffset();
+		
 		playAnimation();
 	})
+	
 })();
