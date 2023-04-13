@@ -125,7 +125,7 @@ video {
     opacity: 0;
 }
 
-.section1-title, .section2-title {
+.section1-title{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 30px 5px 5px 10px;
@@ -143,6 +143,7 @@ video {
 	/* fixed - section1 스크롤시 고정상태 유지 */
 	position: fixed;
 	bottom: 5%;
+	margin: 0 auto;
 	display: none;
 	/* 이미지 가운데 정렬 - 시작점(50%) + x위치(-50%) */
 	left: 50%;
@@ -152,6 +153,7 @@ video {
 .section1-contents-messages {
 	padding: 1.2em;
 	display: none;
+	opacity: 0;
 }
 
 .section1-contents-messages h1 {
@@ -167,26 +169,40 @@ video {
 
 .section1-contents-message0 {
     position: fixed;
-    left: 5%;
+    left: 10%;
     top: 30%;
 }
 
 .section1-contents-message1 {
     position: fixed;
-    right: 5%;
+    right: 8%;
     top: 30%;
 }
 
 .section1-contents-message2 {
     position: fixed;
-    left: 5%;
+    left: 10%;
     top: 60%;
 }
 
 .section1-contents-message3 {
     position: fixed;
-    right: 5%;
+    right: 8%;
     top: 60%;
+}
+
+.section2 {
+    width: 100%;
+    background-color: white;
+    border: 1px solid salmon;
+}
+
+.section2-title {
+    max-width: 1200px;
+    padding: 30px 5px 5px 10px;
+    margin: 0 auto;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    font-size: 3rem;
 }
 
 #current-section1 .section1-contents-img, #current-section1 .section1-contents-messages {
@@ -195,13 +211,7 @@ video {
 }
 
 
-
-
 /* 테스트코딩 */
-.section2 {
-    width: 100%;
-    background-color: white;
-}
 
 .section1-contents, .section2-contents {
     max-width: 1200px;
