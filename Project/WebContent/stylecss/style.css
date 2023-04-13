@@ -136,7 +136,7 @@ video {
 }
 
 .section1 {
-	background: linear-gradient(rgb(235, 97, 82) 0% 40%, white 40% 100%);
+	background: linear-gradient(rgb(235, 97, 82) 0% 40%, rgb(248, 248, 248) 40% 100%);
 }
 
 .section1-contents-img {
@@ -194,7 +194,6 @@ video {
 .section2 {
     width: 100%;
     background-color: white;
-    border: 1px solid salmon;
 }
 
 .section2-title {
@@ -205,20 +204,38 @@ video {
     font-size: 3rem;
 }
 
+.section2-contents {
+	/* flex - contents의 방향을 가로로 설정 */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1200px;
+	height: 100%;
+	margin: auto;
+}
+
+.section2-content0, .section2-content1, .section2-content2 {
+	margin: 0 3em;
+	padding: 1.5em;
+	background-color: lightgray;
+}
+
+.section2-contents img {
+	width: 100%;
+}
+
+.section2-contents h1 {
+	font-size: 1.6rem;
+	margin-bottom: 0.8em;
+}
+
+.section2-contents p {
+    font-size: 1.2rem;
+    line-height: 2em;
+    white-space: normal;
+}
+
 #current-section1 .section1-contents-img, #current-section1 .section1-contents-messages {
 	/* display: block - 특정 section에 도달했을 경우 none을 block으로 함으로 화면에 표시*/
     display: block;
-}
-
-
-/* 테스트코딩 */
-
-.section1-contents, .section2-contents {
-    max-width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-section {
-	border: 1px solid salmon;
 }
