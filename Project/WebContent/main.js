@@ -25,9 +25,10 @@
 		// section1
 		{
 			height: 0,
-			multiplyValue: 3,
+			multiplyValue: 5,
 			elemInfo: {
-				section: document.querySelector('.section1')
+				section: document.querySelector('.section1'),
+				img: document.querySelector('.section1-contents-img')
 			}
 		},
 		
@@ -91,6 +92,15 @@
 		return yOffset;
 	}
 	
+	// setBodyID: 현재 섹션에 따라 body에 id설정
+	// - parameter: 현재섹션
+	// - return: x
+	const setBodyID = function(currentSection){
+		//console.log(currentSection);
+		document.body.setAttribute('id', `current-section${currentSection}`);
+		
+	}
+	
 	// section0Animation: section0에서 발생되는 애니메이션
 	// - parameter: x
 	// - return: x
@@ -119,11 +129,20 @@
 		}, 40);
 	}
 	
+	// section1ImgSettings: section1 화면에 나타날 이미지 크기 설정
+	// - parameter: x
+	// - return: x
+	const section1ImgSettings = function(){
+		const heightSize = window.innerHeight * 0.8;
+		sectionSet[1].elemInfo.img.style.height = `${heightSize}px`;
+	}
+	
 	// loadAnimation: load된 이후에 발생될 애니메이션
 	// - parameter: x
 	// - return: x
 	const loadAnimation = function(){
 		section0Animation();
+		section1ImgSettings();
 	}
 	
 	// playAnimation: section에 맞는 애니메이션 실행
@@ -143,6 +162,7 @@
 		sectionYOffset = getSectionYOffset();
 		
 		setLayout();
+		setBodyID(currentSection);
 		loadAnimation();
 	})
 	
@@ -152,6 +172,7 @@
 		currentSection = getCurrentSection();
 		sectionYOffset = getSectionYOffset();
 		
+		setBodyID(currentSection);
 		playAnimation();
 	})
 	

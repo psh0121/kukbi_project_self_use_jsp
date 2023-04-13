@@ -8,6 +8,14 @@
     font-style: normal;
 }
 
+/* 웹폰트 : 강원교육튼튼체 */
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
 	font-size: 14px;
 	font-family: 'NanumSquareNeo-Variable';
@@ -120,13 +128,77 @@ video {
 .section1-title, .section2-title {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 5px;
-	border-bottom: 1px solid lightgray;
+	padding: 30px 5px 5px 10px;
+	font-family: 'GangwonEduPowerExtraBoldA';
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgb(47, 47, 47);
+}
+
+.section1 {
+	background: linear-gradient(rgb(235, 97, 82) 0% 40%, white 40% 100%);
+}
+
+.section1-contents-img {
+	/* fixed - section1 스크롤시 고정상태 유지 */
+	position: fixed;
+	bottom: 5%;
+	display: none;
+	/* 이미지 가운데 정렬 - 시작점(50%) + x위치(-50%) */
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.section1-contents-messages {
+	padding: 1.2em;
+	display: none;
+}
+
+.section1-contents-messages h1 {
+	font-size: 1.8rem;
+	margin-bottom: 0.3em;
+}
+
+.section1-contents-messages p {
+	font-size: 1.3rem;
+	margin-bottom: 1.2em;
+	line-height: 1.3em;
+}
+
+.section1-contents-message0 {
+    position: fixed;
+    left: 5%;
+    top: 30%;
+}
+
+.section1-contents-message1 {
+    position: fixed;
+    right: 5%;
+    top: 30%;
+}
+
+.section1-contents-message2 {
+    position: fixed;
+    left: 5%;
+    top: 60%;
+}
+
+.section1-contents-message3 {
+    position: fixed;
+    right: 5%;
+    top: 60%;
+}
+
+#current-section1 .section1-contents-img, #current-section1 .section1-contents-messages {
+	/* display: block - 특정 section에 도달했을 경우 none을 block으로 함으로 화면에 표시*/
+    display: block;
 }
 
 
+
+
 /* 테스트코딩 */
-.section1, .section2 {
+.section2 {
     width: 100%;
     background-color: white;
 }

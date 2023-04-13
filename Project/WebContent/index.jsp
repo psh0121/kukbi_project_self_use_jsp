@@ -49,17 +49,43 @@
 	<section class="section1">
 		<!-- title -->
 		<div class="section1-title">
-			<h1>Let's travel에 오신 여러분 환영합니다</h1>
+			<p>Let's travel APP</p>
 		</div>
 		
 		<!-- contents -->
+		<img class="section1-contents-img" src="./image/section1_app.png">
 		<div class="section1-contents">
-			<div>
-				<p>같이 여행갈 친구가 없다면,</p>
-				<p>새로운 여행메이트를 원한다면,</p>
-				<p>Let's travel</p>
+			<div class="section1-contents-messages section1-contents-message0">
+				<h1>간편한 디자인</h1>
+				<p>
+					손쉬운 UI 구성으로 누구나 편리하게<br>
+					이용할 수 있도록 제작되었습니다.
+				</p>
 			</div>
-			<img src="./image/icon.png">
+			
+			<div class="section1-contents-messages section1-contents-message1">
+				<h1>실시간 소통</h1>
+				<p>
+					회원들간의 실시간 소통이 가능해 다양한<br>
+					사람들과 의견을 주고받을 수 있습니다.
+				</p>
+			</div>
+			
+			<div class="section1-contents-messages section1-contents-message2">
+				<h1>긴급메이트 모집</h1>
+				<p>
+					긴급메이트 모집기능이 추가되어<br>
+					빠르게 여행메이트를 정할 수 있습니다.
+				</p>
+			</div>
+			
+			<div class="section1-contents-messages section1-contents-message3">
+				<h1>일정공유</h1>
+				<p>
+					회원들간의 일정공유가 가능해<br>
+					여행계획을 짤 때 도움이 될 것입니다.
+				</p>
+			</div>
 		</div>
 	</section>
 	
@@ -67,7 +93,7 @@
 	<section class="section2">
 		<!-- title -->
 		<div class="section2-title">
-			<h1>Let's travel에 오신 여러분 환영합니다</h1>
+			<p>Let's travel에 오신 여러분 환영합니다</p>
 		</div>
 		
 		<!-- contents -->
