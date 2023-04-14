@@ -135,6 +135,16 @@
 			</div>
 		</div>
 	</section>
+	
+	<!-- footer -->
+	<footer>
+		<div>
+			<img class="footer-icon" src="./image/icon.png">
+            <h3>Let's travel</h3>
+            <p>This homepage is not a real homepage.</p>
+            <p>It is a homepage made for learning purposes.</p>
+		</div>
+	</footer>
 
     <!-- 외부파일 JS -->
 	<script src="./main.js"></script>

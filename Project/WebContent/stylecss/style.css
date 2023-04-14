@@ -52,6 +52,21 @@ video {
 	height: 1080;
 }
 
+footer {
+	padding: 3em;
+	background-color: rgb(10, 37, 73);
+}
+
+footer h3 {
+	color: white;
+	padding: 1em 0;
+}
+
+footer p {
+	color: white;
+	padding: 0.5em 0;
+}
+
 .home-icon {
 	width: 30px;
 	height: 30px;
@@ -234,6 +249,11 @@ video {
     font-size: 1.2rem;
     line-height: 2em;
     white-space: normal;
+}
+
+.footer-icon {
+	width: 40px;
+	height: 40px;
 }
 
 #current-section1 .section1-contents-img, #current-section1 .section1-contents-messages {
