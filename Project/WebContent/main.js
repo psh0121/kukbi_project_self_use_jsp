@@ -332,6 +332,21 @@
 		}
 	}
 	
+	// fixedTitle: 스크롤 내릴때 상단의 주제title을 fixed로 변경
+	// - parameter: x
+	// - return: x
+	const fixedTitle = function(){
+		if((currentSection === 1) && (sectionYOffset >= 0)){
+            document.body.className = 'fix-title1';
+        }
+       else if((currentSection === 2) && (sectionYOffset >= 0)){
+            document.body.className = 'fix-title2';
+        }
+        else{
+            document.body.removeAttribute("class");
+        }
+	}
+	
 	/////////////////////////////////////////////
 	// 이벤트 핸들러
 	
@@ -354,6 +369,17 @@
 		
 		setBodyID(currentSection);
 		playAnimation();
+		fixedTitle();
+	})
+	
+	// resize시 발생되는 이벤트
+	window.addEventListener("resize", () => {
+		currentScrollY = window.scrollY;
+		currentSection = getCurrentSection();
+		sectionYOffset = getSectionYOffset();
+		
+		setLayout();
+		setBodyID(currentSection);
 	})
 	
 })();
