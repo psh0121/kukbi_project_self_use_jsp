@@ -136,6 +136,16 @@
 		</div>
 	</section>
 	
+	<!-- section3 -->
+	<section class="section3">
+		<canvas class="section3-canvas" width="1920" height="1080"></canvas>
+		
+		<!-- contents -->
+		<div class="section3-contents">
+			<p class="section3-contents-message0">여행은 Let's play와 함께해요</p>
+		</div>
+	</section>
+	
 	<!-- footer -->
 	<footer>
 		<div>
