@@ -148,11 +148,41 @@
 	
 	<!-- footer -->
 	<footer>
+		<div class="title-footer">
+			<!-- 홈, 소개, 자주하는 질문, 고객센터 -->
+			<div class="sub-title-footer">
+				<h4>소개</h4>
+				<a href="./about.jsp">간편한 디자인</a>
+				<a href="./about.jsp">실시간 소통</a>
+				<a href="./about.jsp">긴급메이트 모집</a>
+				<a href="./about.jsp">일정공유</a>
+			</div>
+			
+			<div class="sub-title-footer">
+				<h4>문의</h4>
+				<a href="./fqa.jsp">자주하는 질문</a>
+				<a href="./contact.jsp">사업 제휴</a>
+				<a href="./contact.jsp">광고문의</a>
+				<a href="./contact.jsp">입점문의</a>
+			</div>
+			
+			<div class="sub-title-footer">
+				<h4>고객센터</h4>
+				<p>전화: 1234-5678 (24시간 연중무휴)</p>
+				<p>이메일(고객전용): inquiry@travel.im</p>
+				<p>이메일(외부기관전용): contact@travel.im</p>
+				<a href="./contact.jsp">민원 접수</a>
+			</div>
+		</div>
 		<div>
-			<img class="footer-icon" src="./image/icon.png">
-            <h3>Let's travel</h3>
+            <h3>(주)렛츠트레블</h3>
+            <p> 사업자 등록번호 : 123-45-56789 | 대표 : 박수현</p>
+            <p>12345 인천광역시 미추홀구 렛츠트레블로123번길 45, 12층(여행동, 렛츠트레블)</p>
+            <p>고객센터 : 인천광역시 미추홀구 렛츠트레블로123번길 45, 11층(여행동, 렛츠트레블)</p>
+            <br>
             <p>This homepage is not a real homepage.</p>
             <p>It is a homepage made for learning purposes.</p>
+            <img class="footer-icon" src="./image/icon.png">
 		</div>
 	</footer>
 

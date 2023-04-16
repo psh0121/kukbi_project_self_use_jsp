@@ -448,6 +448,11 @@
 	
 	// 로딩된 후에 발생되는 이벤트
 	window.addEventListener("load", () => {
+		// 새로고침시 스크롤 맨 위로 위치
+		setTimeout (function(){
+			scrollTo(0, 0);
+		}, 100);
+		
 		currentScrollY = window.scrollY;
 		currentSection = getCurrentSection();
 		sectionYOffset = getSectionYOffset();
@@ -478,12 +483,4 @@
 		setLayout();
 		setBodyID(currentSection);
 	})
-	
-	// 새로고침시 스크롤 맨 위로 위치
-	window.onload = function(){
-		setTimeout (function(){
-			scrollTo(0, 0);
-		}, 100);
-	}
-	
 })();
