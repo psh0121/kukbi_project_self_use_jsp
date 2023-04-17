@@ -86,10 +86,12 @@
 				canvas: document.querySelector('.section3-canvas')
 			},
 			opacitySettingsValues: {
-                content: [0, 1, {start: 0, end: 0.24}]
+                content: [0, 1, {start: 0, end: 0.24}],
+                fade_out: [1, 0, {start: 0.50, end: 0.69}]
             },
             tanslateYSettingsValues: {
-                content: [40, 0, {start: 0, end: 0.24}]
+                content: [40, 0, {start: 0, end: 0.24}],
+                fade_out: [0, -80, {start: 0.50, end: 0.69}]
             },
             imagesArr: [],
             imageSettingsValues: {
@@ -371,9 +373,21 @@
             value = calcValue(sectionSet[3].tanslateYSettingsValues.content);
             elemInfo.message[0].style.transform = `translateY(${value}%)`;
         }
-        else if(scrollRate >= 0.25)
+        else if((scrollRate >= 0.25) && (scrollRate < 0.50))
         {
             elemInfo.message[0].style.opacity = 1;
+            elemInfo.message[0].transform = `translateY(0%)`;
+        }
+        else if((scrollRate >= 0.50) && (scrollRate < 0.70)){
+        	
+        	value = calcValue(sectionSet[3].opacitySettingsValues.fade_out);
+        	elemInfo.message[0].style.opacity = value;
+        	
+        	value = calcValue(sectionSet[3].tanslateYSettingsValues.fade_out);
+            elemInfo.message[0].style.transform = `translateY(${value}%)`;
+        }
+        else if(scrollRate >= 0.70){
+        	elemInfo.message[0].style.opacity = 0;
             elemInfo.message[0].transform = `translateY(0%)`;
         }
 	}
@@ -448,7 +462,7 @@
 	
 	// 로딩된 후에 발생되는 이벤트
 	window.addEventListener("load", () => {
-		// 새로고침시 스크롤 맨 위로 위치
+		console.log('t1');
 		setTimeout (function(){
 			scrollTo(0, 0);
 		}, 100);
