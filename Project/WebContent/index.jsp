@@ -149,7 +149,6 @@
 	<!-- footer -->
 	<footer>
 		<div class="title-footer">
-			<!-- 홈, 소개, 자주하는 질문, 고객센터 -->
 			<div class="sub-title-footer">
 				<h4>소개</h4>
 				<a href="./about.jsp">간편한 디자인</a>

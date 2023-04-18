@@ -57,9 +57,16 @@ footer {
 	background-color: rgb(10, 37, 73);
 }
 
-footer h3 {
+footer h3, footer h4 {
 	color: white;
-	padding: 1em 0; 
+	padding: 0.8em 0; 
+}
+
+footer a {
+	font-size: 0.9rem;
+	color: rgb(235, 235, 235);
+	text-decoration: none;
+	padding: 0.5em 0;
 }
 
 footer p {
@@ -279,6 +286,21 @@ footer p {
 .footer-icon {
 	width: 40px;
 	height: 40px;
+	margin-top: 3em;
+}
+
+.title-footer {
+	/* display: flex - footer의 타이틀 정보를 가로로 설정 */
+	display: flex;
+}
+
+.sub-title-footer {
+	margin: 0 10em 3em 0;
+}
+
+.sub-title-footer a {
+	/* display: block - 인라인 형식의 a태그 블록모드로 설정 */
+	display: block;
 }
 
 
