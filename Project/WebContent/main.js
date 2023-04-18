@@ -67,10 +67,10 @@
 				]
 			},
 			opacitySettingsValues: {
-                content: [0, 1, {start: 0, end: 0.19}]
+                content: [0, 1, {start: 0, end: 0.29}]
             },
             tanslateYSettingsValues: {
-                content: [20, 0, {start: 0, end: 0.19}]
+                content: [30, 0, {start: 0, end: 0.29}]
             }
 		},
 		
@@ -312,7 +312,7 @@
 		const opInfo = sectionSet[2].opacitySettingsValues;
         const yInfo = sectionSet[2].tanslateYSettingsValues;
         
-        if((scrollRate >= 0) && (scrollRate < 0.20)){
+        if((scrollRate >= 0) && (scrollRate < 0.30)){
             opValue = calcValue(opInfo.content);
             yValue = calcValue(yInfo.content);
 
@@ -323,7 +323,7 @@
             elemInfo.content[2].style.opacity = opValue;
             elemInfo.content[2].style.transform = `translateY(${yValue}%)`;
         }
-        else if(scrollRate >= 0.20){
+        else if(scrollRate >= 0.30){
             elemInfo.content[0].style.opacity = 1;
             elemInfo.content[0].style.transform = `translateY(0%)`;
             elemInfo.content[1].style.opacity = 1;
