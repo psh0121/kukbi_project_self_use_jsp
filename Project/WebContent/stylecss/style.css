@@ -27,21 +27,6 @@ body {
 	letter-spacing: -0.04rem;
 }
 
-nav {
-	/* absolute - 스크롤시 자연스럽게 넘어갈 수 있도록 함 */
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 70px;
-}
-
-nav a {
-	text-decoration: none;
-	color: rgb(235, 235, 235);
-	text-shadow: 1px 1px 2px rgb(47, 47, 47);
-}
-
 video {
 	/* absolute - 가장뒤에 비디오 위치 */
 	position: absolute;
@@ -50,63 +35,6 @@ video {
 	z-index: -10;
 	width: 1920;
 	height: 1080;
-}
-
-footer {
-	padding: 3em;
-	background-color: rgb(10, 37, 73);
-}
-
-footer h3, footer h4 {
-	color: white;
-	padding: 0.8em 0; 
-}
-
-footer a {
-	font-size: 0.9rem;
-	color: rgb(235, 235, 235);
-	text-decoration: none;
-	padding: 0.5em 0;
-}
-
-footer p {
-	color: white;
-	padding: 0.5em 0;
-	font-size: 0.9rem;
-}
-
-.home-icon {
-	width: 30px;
-	height: 30px;
-}
-
-.global-nav-links {
-	/* flex - nav안에 있는 link 정렬*/
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 5px 0 5px;
-	height: 100%;
-}
-
-.global-nav-link {
-	font-size: 1.1rem;
-	font-weight: bold;
-}
-
-.global-nav-home-label {
-	/* flex - 라벨로 묶여있는 이미지와 링크의 정렬 관리 */
-	display: flex;
-	align-items: center;
-}
-
-.global-nav-home-label a {
-	font-size: 2.3rem;
-	font-weight: bold;
-	padding-left: 5px;
-	color: rgb(235, 235, 235);
 }
 
 .section0 {
@@ -282,27 +210,6 @@ footer p {
     display: none;
     opacity: 0;
 }
-
-.footer-icon {
-	width: 40px;
-	height: 40px;
-	margin-top: 3em;
-}
-
-.title-footer {
-	/* display: flex - footer의 타이틀 정보를 가로로 설정 */
-	display: flex;
-}
-
-.sub-title-footer {
-	margin: 0 10em 3em 0;
-}
-
-.sub-title-footer a {
-	/* display: block - 인라인 형식의 a태그 블록모드로 설정 */
-	display: block;
-}
-
 
 .fix-title1 .section1-title, .fix-title2 .section2-title
 {
