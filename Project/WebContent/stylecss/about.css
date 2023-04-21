@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+.section0 {
+	width: 100%;
+	padding-top: 70px;
+	
+}
+
+#about-nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+/* test coding */
+.section0, .section1, .section2, .section3 {
+	border: 2px solid red;
+}

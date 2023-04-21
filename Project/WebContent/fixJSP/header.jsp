@@ -95,8 +95,8 @@ nav a {
 			</label>
 			
 			<a class="global-nav-link" href="index.jsp">홈</a>
-			<a class="global-nav-link" href="about.jsp">소개</a>
-			<a class="global-nav-link" href="fqa.jsp">자주하는질문</a>
+			<a class="global-nav-link" href="about.jsp">회사 소개</a>
+			<a class="global-nav-link" href="fqa.jsp">자주하는 질문</a>
 			<a class="global-nav-link" href="contact.jsp">고객센터</a>
 		</div>
 	</nav>

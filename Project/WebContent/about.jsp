@@ -8,14 +8,14 @@
 
 <!-- 스타일 -->
 <link rel="stylesheet" href="./stylecss/reset.css">
-<link rel="stylesheet" href="./stylecss/style.css">
+<link rel="stylesheet" href="./stylecss/about.css">
 </head>
 <body>
 	<!-- header -->
 	<%@ include file="./fixJSP/header.jsp" %>
 	
 	<!-- section0 -->
-	<section>
+	<section class="section0">
 		<!-- 일단 먼저 뒤에 여행느낌 사진 만들고 조금 어둡게 설정하도록 한다. -->
 		<p>
 			모두가 여행을 떠나는 공통적인 목적은<br>
@@ -24,7 +24,7 @@
 	</section>
 	
 	<!-- section1 -->
-	<section>
+	<section class="section1">
 		<!-- 우리 기업이 존재하는 이유 -->
 		<p>
 			Let's travel is...<br>
@@ -35,7 +35,7 @@
 	</section>
 	
 	<!-- section2 -->
-	<section>
+	<section class="section2">
 		<!-- 이루어 나가고 싶은 목표 -->
 		<p>
 			모두를 위한, 새로운 여행서비스를 제공하고자 합니다.<br>
@@ -48,7 +48,7 @@
 	</section>
 	
 	<!-- section3 -->
-	<section>
+	<section class="section3">
 		<!-- 함께 나아가고 싶은 기업들 -->
 		<p>
 			세계적인 팀들과 어깨를 나란히 하고 싶습니다.
@@ -61,5 +61,8 @@
 	
 	<!-- footer -->
 	<%@ include file="./fixJSP/footer.jsp" %>
+	
+	<!-- 외부파일 JS -->
+	<script src="./about.js"></script>
 </body>
 </html>

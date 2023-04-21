@@ -9,6 +9,7 @@
 
 <!-- 스타일 -->
 <link rel="stylesheet" href="./stylecss/reset.css">
+<link rel="stylesheet" href="./stylecss/fix.css">
 <link rel="stylesheet" href="./stylecss/style.css">
 </head>
 
