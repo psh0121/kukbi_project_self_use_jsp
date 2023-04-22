@@ -3,14 +3,23 @@
 .section0 {
 	width: 100%;
 	padding-top: 70px;
-	
+	background-image: url('../image/about/section0_background.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: black;
 }
 
 #about-nav {
 	position: fixed;
 	left: 0;
 	top: 0;
-	width: 100%;
+	width: 100% auto;
+}
+
+.section1 {
+	background-image: url('../image/about/section1_background.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 /* test coding */
