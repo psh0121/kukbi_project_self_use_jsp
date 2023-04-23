@@ -1,5 +1,20 @@
 @charset 'UTF-8';
 
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 웹폰트 : 강원교육튼튼체 */
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .section0 {
 	width: 100%;
 	padding-top: 70px;
@@ -7,6 +22,31 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-color: black;
+	color: white;
+}
+
+.section0-contents {
+	/* display: flex - section0 메시지에 대한 정렬 설정 */
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	align-items: center;
+    justify-content: center;
+}
+
+.section0-contents-message {
+	padding-top: 20%;
+	text-shadow: 1px 1px 2px rgb(47, 47, 47);
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.section0-arrow {
+	width: 80px;
+	opacity: 70%;
+	padding-top: 5%;
 }
 
 #about-nav {

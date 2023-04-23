@@ -16,11 +16,16 @@
 	
 	<!-- section0 -->
 	<section class="section0">
-		<!-- 일단 먼저 뒤에 여행느낌 사진 만들고 조금 어둡게 설정하도록 한다. -->
-		<p>
-			모두가 여행을 떠나는 공통적인 목적은<br>
-			'즐거움' 입니다
-		</p>
+		<!-- contents -->
+		<div class="section0-contents">
+			<div class="section0-contents-message">
+				<p>
+					여행, 이제는<br>
+					실천으로 옮겨야할 때 입니다
+				</p>
+				<img src="./image/about/section0_arrow.png" class="section0-arrow">
+			</div>
+		</div>
 	</section>
 	
 	<!-- section1 -->
