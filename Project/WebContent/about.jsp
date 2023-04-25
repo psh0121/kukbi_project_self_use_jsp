@@ -30,17 +30,53 @@
 	
 	<!-- section1 -->
 	<section class="section1">
-		<!-- 우리 기업이 존재하는 이유 -->
+		<!-- contents -->
+		<div class="section1-contents">
+			<p class="section1-contents-messageTitle">
+				자유를 열망하는 사람들이 모여,<br>
+				모두가 추구하는 최고의 서비스를 제공하기 위해 노력합니다.
+			</p>
+			
+			<div class="section1-contents-messageBox">
+				<div class="section1-contents-messageBox-style">
+					<p>목표 가입자수</p>
+					<p>2,200만 +</p>
+				</div>
+				
+				<div class="section1-contents-messageBox-style">
+					<p>희망 투자금액</p>
+					<p>1조원 +</p>
+				</div>
+			</div>
+			
+			<div class="section1-contents-messageBox">
+				<div class="section1-contents-messageBox-style">
+					<p>전체 팀원 수</p>
+					<p>1,000명 +</p>
+				</div>
+				
+				<div class="section1-contents-messageBox-style">
+					<p>추후 출시 서비스 수</p>
+					<p>50개 +</p>
+				</div>
+			</div>
+		</div>
+		
+		<p class="section1-contents-messageFooter">2023년 5월 기준</p>
+	</section>
+	
+	<!-- section2 -->
+	<section class="section2">
+	
+	<!-- 우리 기업이 존재하는 이유 -->
 		<p>
 			Let's travel is...<br>
 			저희는 여행의 즐거움을 배로 만들기 위해 태어난 조직입니다.<br>
 			여행에대한 다양한 정보제공과 소통의 장을 열어<br>
 			여러분의 여행의 가치를 배로 높여드리겠습니다.
 		</p>
-	</section>
-	
-	<!-- section2 -->
-	<section class="section2">
+		
+		
 		<!-- 이루어 나가고 싶은 목표 -->
 		<p>
 			모두를 위한, 새로운 여행서비스를 제공하고자 합니다.<br>

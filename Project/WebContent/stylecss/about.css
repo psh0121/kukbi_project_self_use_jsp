@@ -63,9 +63,54 @@
 	background-image: url('../image/about/section1_background.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	color: white;
+}
+
+.section1-contents {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10% auto 0 auto;
+}
+
+.section1-contents-messageBox {
+    /* display: flex - 레이아웃 화면 구성 위해 설정 */
+    display: flex;
+}
+
+.section1-contents-messageTitle {
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 1px rgb(47, 47, 47);
+    margin-bottom: 7%;
+}
+
+.section1-contents-messageBox {
+    width: 70%;
+}
+
+.section1-contents-messageBox-style {
+    margin-bottom: 8%;
+    width: 50%;
+}
+
+.section1-contents-messageBox-style p:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.section1-contents-messageBox-style p:nth-child(2) {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.section1-contents-messageFooter {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 /* test coding */
-.section0, .section1, .section2, .section3 {
+.section1, .section2, .section3 {
 	border: 2px solid red;
 }
