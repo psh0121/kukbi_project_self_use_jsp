@@ -41,6 +41,7 @@ nav {
 	top: 0;
 	width: 100%;
 	height: 70px;
+	z-index: 10;
 }
 
 nav a {

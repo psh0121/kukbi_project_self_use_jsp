@@ -69,7 +69,8 @@
 .section1-contents {
     width: 100%;
     max-width: 1200px;
-    margin: 10% auto 0 auto;
+    margin: 0 auto;
+    padding-top: 10%;
 }
 
 .section1-contents-messageBox {
@@ -111,6 +112,6 @@
 }
 
 /* test coding */
-.section1, .section2, .section3 {
+.section2, .section3 {
 	border: 2px solid red;
 }
