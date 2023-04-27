@@ -462,7 +462,6 @@
 	
 	// 로딩된 후에 발생되는 이벤트
 	window.addEventListener("load", () => {
-		console.log('t1');
 		setTimeout (function(){
 			scrollTo(0, 0);
 		}, 100);
