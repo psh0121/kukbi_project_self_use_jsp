@@ -60,9 +60,9 @@
 					<p>50개 +</p>
 				</div>
 			</div>
+			
+			<p class="section1-contents-messageFooter">2023년 5월 기준</p>
 		</div>
-		
-		<p class="section1-contents-messageFooter">2023년 5월 기준</p>
 	</section>
 	
 	<!-- section2 -->

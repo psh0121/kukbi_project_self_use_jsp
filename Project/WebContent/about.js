@@ -9,7 +9,7 @@
         // section0
         {
             height: 0,
-            multiplayValue: 1,
+            multiplayValue: 1.1,
             elemInfo: {
                 section: document.querySelector('.section0'),
                 message: document.querySelector('.section0-contents-message'),
@@ -22,10 +22,13 @@
         // section1
         {
             height: 0,
-            multiplayValue: 1,
+            multiplayValue: 1.3,
             elemInfo: {
-                section: document.querySelector('.section1')
-            }
+                section: document.querySelector('.section1'),
+                message: document.querySelector('.section1-contents')
+            },
+            opacitySettingsValue: [0, 1],
+            translateYSettingsValue: [3, 0]
         },
 
         // section2
@@ -156,12 +159,56 @@
             }
         }, 10);
     }
+    
+    // section1Animation: section1에서 발생되는 애니메이션
+    // - parameter: x
+    // - return: x
+    let firstTime = true;
+
+    const section1Animation = function() {
+        if(!firstTime) return;
+
+        const msg = sectionSet[1].elemInfo.message;
+
+        let opValue = sectionSet[1].opacitySettingsValue[0];
+        let yValue = sectionSet[1].translateYSettingsValue[0];
+        let tid;
+
+        tid = setInterval(() => {
+            msg.style.opacity = opValue;
+            opValue += 0.05;
+
+            msg.style.transform = `translateY(${yValue}%)`;
+            yValue -= 0.05;
+
+            if(
+                (opValue >= sectionSet[1].opacitySettingsValue[1]) &&
+                (yValue <= sectionSet[1].translateYSettingsValue[1])
+            ){
+                clearInterval(tid);
+            }
+        }, 10);
+
+        firstTime = false;
+    }
 
     // loadAnimation: 화면이 로드될 때에 한번만 발생되는 애니메이션
     // - parameter: x
     // - return: x
     const loadAnimation = function() {
         section0Animation();
+    }
+    
+    // playAnimation: section에 맞는 애니메이션 실행
+    // - parameter: x
+    // - return: x
+    let firstVisit = true;
+    const playAnimation = function() {
+        switch(currentSection) {
+            case 1:
+                section1Animation();
+                break;
+        }
     }
 
     /////////////////////////////////////////////////////////
@@ -189,6 +236,7 @@
         sectionYOffset = getSectionYOffset();
         
         setBlur();
+        playAnimation();
     })
 
     // resize시 발생되는 이벤트
@@ -202,7 +250,7 @@
 
     // section0 이벤트
     document.querySelector('.section0-arrow').addEventListener("click", () => {
-        window.scrollTo({left: 0, top: sectionSet[0].height, behavior: "smooth"});
+        window.scrollTo({left: 0, top: sectionSet[0].height+1, behavior: "smooth"});
     })
 
 })();
