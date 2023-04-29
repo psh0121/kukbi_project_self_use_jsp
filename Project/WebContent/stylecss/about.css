@@ -114,6 +114,16 @@
 	color: rgb(141, 141, 141);
 }
 
+.section2 {
+	background-color: black;
+	color: white;
+	background-image: url('../image/about/section2_background.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 /* test coding */
 .section2, .section3 {
 	border: 2px solid red;
