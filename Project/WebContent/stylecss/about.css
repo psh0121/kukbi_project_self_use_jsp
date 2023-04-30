@@ -119,9 +119,32 @@
 	color: white;
 	background-image: url('../image/about/section2_background.jpeg');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
     background-position: center;
     background-attachment: fixed;
+}
+
+.section2-contents {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50%;
+    margin:  55% auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 4%;
+}
+
+.section2-contents p:nth-child(1) {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    opacity: 0.6;
+}
+
+.section2-contents p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.6em;
 }
 
 /* test coding */

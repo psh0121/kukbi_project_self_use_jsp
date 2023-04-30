@@ -34,7 +34,7 @@
         // section2
         {
             height: 0,
-            multiplayValue: 2,
+            multiplayValue: 2.5,
             elemInfo: {
                 section: document.querySelector('.section2')
             }
