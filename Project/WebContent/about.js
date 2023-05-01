@@ -37,7 +37,9 @@
             multiplayValue: 2.5,
             elemInfo: {
                 section: document.querySelector('.section2')
-            }
+            },
+            fade_in: [1, 0, {start: 0, end: 0.3}],
+            fade_out: [0, 1, {start: 0.6, end: 0.9}]
         },
 
         // section3
@@ -105,6 +107,34 @@
             yOffset -= sectionSet[i].height;
         }
         return yOffset;
+    }
+    
+    // calcValue: 애니메이션에 적용하기 위한 값을 css화 한다.
+    // - parameter: 각영역의 설정값 ([0, 1, {start: 0.05, end: 0.14}])
+    // - return: css화 한 값
+    const calcValue = function(value) {
+        let rate;
+        let result;
+        const height = sectionSet[currentSection].height;
+
+        // 비율에 기반한 css화 한 값
+        const startValue = height * value[2].start;
+        const endValue = height * value[2].end;
+        const heightValue = endValue - startValue;
+
+        // 설정범위에서 벗어났을 경우 값의 가장 끝 값이 value[0] 또는 value[1]로
+        // 임의로 값을 설정해 준다.
+        if(sectionYOffset < startValue){
+            result = value[0];
+        }
+        else if(sectionYOffset > endValue){
+            result = value[1];
+        }
+        else {
+            rate = (sectionYOffset - startValue) / heightValue;
+            result = (rate * (value[1] - value[0])) + value[0];
+        }
+        return result;
     }
 
     // section0Animation: section0에서 발생되는 애니메이션
@@ -191,6 +221,24 @@
 
         firstTime = false;
     }
+    
+    // section2Animation: section2에서 발생되는 애니메이션
+    // - parameter: x
+    // - return: x
+    const section2Animation = function() {
+    	const scrollRate = sectionYOffset / sectionSet[2].height;
+    	const fadeIn = sectionSet[2].fade_in;
+    	const fadeOut = sectionSet[2].fade_out;
+    	
+    	if(scrollRate <= 0.5){
+            document.documentElement.style.setProperty('--section2-before-opacityValue', calcValue(fadeIn));
+            console.log('fade-in: ' + calcValue(fadeIn));
+        }
+        else {
+            document.documentElement.style.setProperty('--section2-before-opacityValue', calcValue(fadeOut));
+            console.log('fade-out: ' + calcValue(fadeOut));
+        }
+    }
 
     // loadAnimation: 화면이 로드될 때에 한번만 발생되는 애니메이션
     // - parameter: x
@@ -208,6 +256,9 @@
             case 1:
                 section1Animation();
                 break;
+            case 2:
+            	section2Animation();
+            	break;
         }
     }
 
