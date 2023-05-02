@@ -38,8 +38,8 @@
             elemInfo: {
                 section: document.querySelector('.section2')
             },
-            fade_in: [1, 0, {start: 0, end: 0.3}],
-            fade_out: [0, 1, {start: 0.6, end: 0.9}]
+            fade_in: [1, 0, {start: 0, end: 0.2}],
+            fade_out: [0, 1, {start: 0.5, end: 0.9}]
         },
 
         // section3
