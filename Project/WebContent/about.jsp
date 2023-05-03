@@ -80,14 +80,67 @@
 	
 	<!-- section3 -->
 	<section class="section3">
-		<!-- 함께 나아가고 싶은 기업들 -->
-		<p>
-			세계적인 팀들과 어깨를 나란히 하고 싶습니다.
-			- 에어비앤비
-			- 여기어때
-			- 트리바고
-			- etc ...
-		</p>
+		<!-- contents -->
+		<div class="section3-contents">
+			<p class="section3-contents-messageTitle">
+				Let's travel이 바꿀 여행
+			</p>
+			<p class="section3-contents-subMessageTitle">
+				모두를 위한, 완벽한 여행을 만들겠습니다.
+			</p>
+			
+			<div class="section3-contents-messageBox">
+				<div>
+					<p>①</p>
+					<p>
+						여행은 당신의 삶을 윤택하게 합니다
+					</p>
+				</div>
+
+				<div>
+					<p>②</p>
+					<p>
+						여행, 쉽게 시작하고 즐길 수 있는 문화가 됩니다
+					</p>
+				</div>
+
+				<div>
+					<p>③</p>
+					<p>
+						여행 산업의 새로운 미래를 제시합니다
+					</p>
+				</div>
+
+				<div>
+					<p>④</p>
+					<p>
+						궁극적인 목표는 고객이 만족하는 것
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- section4-->
+	<section class="section4">
+		<!-- contents -->
+		<div class="section4-contents">
+			<p>
+				세계적인 투자자들과<br>
+				Let's travel은 함께하고싶습니다
+			</p>
+			
+			<div class="section4-contents-brandBox">
+				- 에어비앤비
+				- 여기어때
+				- 트리바고
+				- ktx
+				- 대한항공
+				- 아시아나항공
+				- 하나투어
+				- 아고다
+			</div>
+		</div>
 	</section>
 	
 	<!-- footer -->

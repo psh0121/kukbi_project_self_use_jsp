@@ -162,6 +162,6 @@
 }
 
 /* test coding */
-.section3 {
+.section3, .section4 {
 	border: 2px solid red;
 }

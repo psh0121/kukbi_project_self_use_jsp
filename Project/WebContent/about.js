@@ -49,6 +49,15 @@
             elemInfo: {
                 section: document.querySelector('.section3')
             }
+        },
+        
+        // section4
+        {
+            height: 0,
+            multiplayValue: 1,
+            elemInfo: {
+                section: document.querySelector('.section4')
+            }
         }
     ];
 
