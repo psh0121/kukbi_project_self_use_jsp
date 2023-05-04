@@ -241,11 +241,27 @@
     	
     	if(scrollRate <= 0.5){
             document.documentElement.style.setProperty('--section2-before-opacityValue', calcValue(fadeIn));
-            console.log('fade-in: ' + calcValue(fadeIn));
         }
         else {
             document.documentElement.style.setProperty('--section2-before-opacityValue', calcValue(fadeOut));
-            console.log('fade-out: ' + calcValue(fadeOut));
+        }
+
+        // 마지막 부분부터 nav부분 backgroundColor 하얀색으로 처리하기
+        const changeStyle = function() {
+            let result = 0;
+
+            for(let i = 0; i < 3; i++) {
+                result += sectionSet[i].height;
+            }
+
+            return result - 70;
+        }
+
+        if(currentScrollY >= changeStyle()) {
+            document.querySelector('nav').style.backgroundColor = 'white';
+        }
+        else {
+            document.querySelector('nav').style.backgroundColor = null;
         }
     }
 
