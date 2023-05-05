@@ -90,28 +90,28 @@
 			</p>
 			
 			<div class="section3-contents-messageBox">
-				<div>
+				<div class="section3-contents-messageBox-style section3-box0">
 					<p>①</p>
 					<p>
 						여행은 당신의 삶을 윤택하게 합니다
 					</p>
 				</div>
 
-				<div>
+				<div class="section3-contents-messageBox-style section3-box1">
 					<p>②</p>
 					<p>
 						여행, 쉽게 시작하고 즐길 수 있는 문화가 됩니다
 					</p>
 				</div>
 
-				<div>
+				<div class="section3-contents-messageBox-style section3-box2">
 					<p>③</p>
 					<p>
 						여행 산업의 새로운 미래를 제시합니다
 					</p>
 				</div>
 
-				<div>
+				<div class="section3-contents-messageBox-style section3-box3">
 					<p>④</p>
 					<p>
 						궁극적인 목표는 고객이 만족하는 것

@@ -45,7 +45,7 @@
         // section3
         {
             height: 0,
-            multiplayValue: 1,
+            multiplayValue: 2,
             elemInfo: {
                 section: document.querySelector('.section3')
             }
@@ -73,6 +73,12 @@
         }
         else {
             document.querySelector('#about-nav').style.backdropFilter = 'blur(5px)';
+        }
+
+        // 간헐적발생 에러 처리
+        if(currentSection === 0) {
+            document.querySelector('nav').style.backgroundColor = null;
+            document.querySelector('nav').style.borderBottom = null;
         }
     }
 
@@ -259,9 +265,11 @@
 
         if(currentScrollY >= changeStyle()) {
             document.querySelector('nav').style.backgroundColor = 'white';
+            document.querySelector('nav').style.borderBottom = '1px solid lightgray';
         }
         else {
             document.querySelector('nav').style.backgroundColor = null;
+            document.querySelector('nav').style.borderBottom = null;
         }
     }
 
@@ -270,6 +278,18 @@
     // - return: x
     const loadAnimation = function() {
         section0Animation();
+    }
+
+    // setMessageBoxSize: section3에 있는 messageBox의 사이즈 조절
+    // - parameter: x
+    // - return: x
+    const setMessageBoxSize = function() {
+        const size = sectionSet[3].height * 0.3;
+        const ArrElem = document.querySelectorAll('.section3-contents-messageBox-style');
+
+        for(let i = 0; i < ArrElem.length; i++) {
+            ArrElem[i].style.height = `${size}px`;
+        }
     }
     
     // playAnimation: section에 맞는 애니메이션 실행
@@ -302,6 +322,7 @@
         sectionYOffset = getSectionYOffset();
 
         setLayout();
+        setMessageBoxSize();
         loadAnimation();
     })
 
@@ -322,6 +343,7 @@
         sectionYOffset = getSectionYOffset();
 
         setLayout();
+        setMessageBoxSize();
     })
 
     // section0 이벤트

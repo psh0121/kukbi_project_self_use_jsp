@@ -161,7 +161,53 @@
     line-height: 1.6em;
 }
 
+.section3 {
+    border: 1px solid white;
+}
+
+.section3-contents-messageTitle {
+    margin-top: 8%;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section3-contents-subMessageTitle {
+    margin: 1.5em 0;
+    color: rgb(89, 89, 89);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.section3-contents-messageBox {
+    /* display: flex - 데이터의 정렬을 변화시키기 위해 */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section3-contents-messageBox-style {
+    margin-top: 4%;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.section3-box0 {
+}
+
+.section3-contents-messageBox-style p:nth-child(2) {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.section3-contents-messageBox div {
+    border: 1px solid red;
+}
+
 /* test coding */
-.section3, .section4 {
+.section4 {
 	border: 2px solid red;
 }
