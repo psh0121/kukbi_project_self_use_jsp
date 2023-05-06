@@ -196,15 +196,44 @@
 }
 
 .section3-box0 {
+    background-image: url('../image/about/section3_box0.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3-box1 {
+    background-image: url('../image/about/section3_box1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3-box2 {
+    background-image: url('../image/about/section3_box2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3-box3 {
+    background-image: url('../image/about/section3_box3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3-contents-messageBox-style p:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rbg(51, 58, 68);
+    margin: 8% 0% 3% 8%;
+    text-shadow: 0.5px 0.5px 1px white;
 }
 
 .section3-contents-messageBox-style p:nth-child(2) {
     font-weight: bold;
     font-size: 2rem;
-}
-
-.section3-contents-messageBox div {
-    border: 1px solid red;
+    color: rgb(17, 21, 26);
+    margin: 0% 8%;
+    line-height: 1.5em;
+    text-shadow: 0.5px 0.5px 1px white;
 }
 
 /* test coding */
