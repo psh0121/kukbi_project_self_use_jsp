@@ -131,14 +131,14 @@
 			</p>
 			
 			<div class="section4-contents-brandBox">
-				- 에어비앤비
-				- 여기어때
-				- 트리바고
-				- ktx
-				- 대한항공
-				- 아시아나항공
-				- 하나투어
-				- 아고다
+				<img src="./image/about/section4_brand0.png">
+				<img src="./image/about/section4_brand1.png">
+				<img src="./image/about/section4_brand2.png">
+				<img src="./image/about/section4_brand3.png">
+				<img src="./image/about/section4_brand4.png">
+				<img src="./image/about/section4_brand5.png">
+				<img src="./image/about/section4_brand6.png">
+				<img src="./image/about/section4_brand7.png">
 			</div>
 		</div>
 	</section>
