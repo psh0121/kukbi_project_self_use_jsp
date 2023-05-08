@@ -127,18 +127,18 @@
 		<div class="section4-contents">
 			<p>
 				세계적인 투자자들과<br>
-				Let's travel은 함께하고싶습니다
+				Let's travel은 함께하고 싶습니다
 			</p>
 			
 			<div class="section4-contents-brandBox">
-				<img src="./image/about/section4_brand0.png">
-				<img src="./image/about/section4_brand1.png">
-				<img src="./image/about/section4_brand2.png">
-				<img src="./image/about/section4_brand3.png">
-				<img src="./image/about/section4_brand4.png">
-				<img src="./image/about/section4_brand5.png">
-				<img src="./image/about/section4_brand6.png">
-				<img src="./image/about/section4_brand7.png">
+				<div><img src="./image/about/section4_brand0.png" class="section4-brand0"></div>
+				<div><img src="./image/about/section4_brand1.png" class="section4-brand1"></div>
+				<div><img src="./image/about/section4_brand2.png" class="section4-brand2"></div>
+				<div><img src="./image/about/section4_brand3.png" class="section4-brand3"></div>
+				<div><img src="./image/about/section4_brand4.png" class="section4-brand4"></div>
+				<div><img src="./image/about/section4_brand5.png" class="section4-brand5"></div>
+				<div><img src="./image/about/section4_brand6.png" class="section4-brand6"></div>
+				<div><img src="./image/about/section4_brand7.png" class="section4-brand7"></div>
 			</div>
 		</div>
 	</section>

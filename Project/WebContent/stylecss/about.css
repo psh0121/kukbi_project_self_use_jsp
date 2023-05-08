@@ -243,6 +243,11 @@
 
 .section4-contents p {
     text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5em;
+    margin-top: 10%;
+    margin-bottom: 7%;
 }
 
 .section4-contents-brandBox {
@@ -251,9 +256,63 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid rebeccapurple;
 }
 
-.section4-contents-brandBox img {
-    width: 15%;
+.section4-contents-brandBox div {
+    /* display: flex - 이미지를 정중앙으로 배치하기 위해 */
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.section4-contents-brandBox div:nth-child(5) {
+    margin-top: 3%;
+}
+
+.section4-contents-brandBox div:nth-child(6) {
+    margin-top: 3%;
+}
+
+.section4-contents-brandBox div:nth-child(7) {
+    margin-top: 3%;
+}
+
+.section4-contents-brandBox div:nth-child(8) {
+    margin-top: 3%;
+}
+
+.section4-contents-brandBox div img {
+    margin: 0 auto;
+}
+
+.section4-brand0 {
+    width: 60%;
+}
+
+.section4-brand1 {
+    width: 65%;
+}
+
+.section4-brand2 {
+    width: 80%;
+}
+
+.section4-brand3 {
+    width: 50%;
+}
+
+.section4-brand4 {
+    width: 70%;
+}
+
+.section4-brand5 {
+    width: 50%;
+}
+
+.section4-brand6 {
+    width: 50%;
+}
+
+.section4-brand7 {
+    width: 40%;
 }

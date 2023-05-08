@@ -54,7 +54,7 @@
         // section4
         {
             height: 0,
-            multiplayValue: 0.7,
+            multiplayValue: 0.8,
             elemInfo: {
                 section: document.querySelector('.section4')
             }
