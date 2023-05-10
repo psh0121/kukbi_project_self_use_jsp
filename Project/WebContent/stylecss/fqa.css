@@ -1,1 +1,28 @@
-@charset "UTF-8";
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 웹폰트 : 강원교육튼튼체 */
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+    padding-top: 70px;
+}
+
+#fqa-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100% auto;
+    background-color: white;
+}
