@@ -16,7 +16,49 @@
 	
 	<!-- section -->
     <section>
-        <h1>hi</h1>
+        <p class="section-title">자주 묻는 질문</p>
+
+        <!-- contents -->
+        <div class="section-contents">
+            <div>
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Tempora ipsum repudiandae tempore ut nulla nostrum et id quae nihil ullam? Saepe, aspernatur fugit! 
+                        Voluptatem repellendus repellat deserunt officiis dolore fugiat?
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Tempora ipsum repudiandae tempore ut nulla nostrum et id quae nihil ullam? Saepe, aspernatur fugit! 
+                        Voluptatem repellendus repellat deserunt officiis dolore fugiat?
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Tempora ipsum repudiandae tempore ut nulla nostrum et id quae nihil ullam? Saepe, aspernatur fugit! 
+                        Voluptatem repellendus repellat deserunt officiis dolore fugiat?
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 	
 	<!-- footer -->
