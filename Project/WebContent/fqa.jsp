@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Let's travel : 자주하는질문</title>
 
 <!-- 스타일 -->
@@ -60,6 +60,11 @@
             </div>
         </div>
     </section>
+    
+    <!-- article -->
+    <article>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, impedit officia nesciunt beatae voluptatum ullam consequuntur neque labore, fugiat illum at cupiditate aut deserunt totam, sequi expedita accusamus accusantium eos.
+    </article>
 	
 	<!-- footer -->
 	<%@ include file="./fixJSP/footer.jsp" %>
