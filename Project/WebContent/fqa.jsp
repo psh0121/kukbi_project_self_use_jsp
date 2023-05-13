@@ -20,11 +20,11 @@
 
         <!-- contents -->
         <div class="section-contents">
-            <div>
-                <div>
+            <div class="qa">
+                <div class="question">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
-                <div>
+                <div class="answer">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Tempora ipsum repudiandae tempore ut nulla nostrum et id quae nihil ullam? Saepe, aspernatur fugit! 
@@ -33,11 +33,11 @@
                 </div>
             </div>
 
-            <div>
-                <div>
+            <div class="qa">
+                <div class="question">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
-                <div>
+                <div class="answer">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Tempora ipsum repudiandae tempore ut nulla nostrum et id quae nihil ullam? Saepe, aspernatur fugit! 
@@ -46,11 +46,11 @@
                 </div>
             </div>
 
-            <div>
-                <div>
+            <div class="qa">
+                <div class="question">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
-                <div>
+                <div class="answer">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Tempora ipsum repudiandae tempore ut nulla nostrum et id quae nihil ullam? Saepe, aspernatur fugit! 
