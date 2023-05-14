@@ -20,7 +20,7 @@
 
         <!-- contents -->
         <div class="section-contents">
-            <div class="qa">
+            <div class="qa active">
                 <div class="question">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
