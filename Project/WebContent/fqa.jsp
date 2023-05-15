@@ -63,7 +63,21 @@
     
     <!-- article -->
     <article>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, impedit officia nesciunt beatae voluptatum ullam consequuntur neque labore, fugiat illum at cupiditate aut deserunt totam, sequi expedita accusamus accusantium eos.
+        <div>
+            <div>
+                <p>
+                	문제가 아직 해결되지 않았다면<br>
+                   	언제든 문의해주세요.
+                </p>
+                <p>24시간 고객센터</p>
+            </div>
+            <div>
+                <p>피해•사기 상담</p>
+                <p>112</p>
+            </div>
+        </div>
+
+        <img src="./image/fqa/article.png">
     </article>
 	
 	<!-- footer -->
