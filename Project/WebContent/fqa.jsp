@@ -63,21 +63,24 @@
     
     <!-- article -->
     <article>
-        <div>
+        <!-- contents -->
+        <div class="article-contents">
             <div>
-                <p>
-                	문제가 아직 해결되지 않았다면<br>
-                   	언제든 문의해주세요.
-                </p>
-                <p>24시간 고객센터</p>
+                <div class="article-header">
+                    <p>
+                        문제가 아직 해결되지 않았다면<br>
+                        언제든 문의해주세요.
+                    </p>
+                    <p>24시간 고객센터</p>
+                </div>
+                <div class="article-footer">
+                    <p>피해•사기 상담</p>
+                    <p>112</p>
+                </div>
             </div>
-            <div>
-                <p>피해•사기 상담</p>
-                <p>112</p>
-            </div>
-        </div>
 
-        <img src="./image/fqa/article.png">
+            <img src="./image/fqa/article.png">
+        </div>
     </article>
 	
 	<!-- footer -->

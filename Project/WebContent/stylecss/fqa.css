@@ -61,6 +61,20 @@ article {
     display: none;
 }
 
+.article-contents {
+    /* display: flex - article 레이아웃 배치 */
+    display: flex;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.article-contents img {
+    width: 18vh;
+}
+
 #fqa-nav {
     position: fixed;
     left: 0;
