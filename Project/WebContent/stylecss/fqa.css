@@ -67,8 +67,35 @@ article {
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+}
+
+.article-contents > div {
+    margin-right: 10%;
+}
+
+.article-header p:nth-child(1) {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(52, 52, 52);
+}
+
+.article-header p:nth-child(2) {
+    font-size: 1.3rem;
+    color: rgb(108, 108, 108);
+    margin: 1em 0 2em 0;
+}
+
+.article-footer p:nth-child(1) {
+    font-size: 1.1rem;
+    color: rgb(108, 108, 108);
+    margin-bottom: 0.8em;
+}
+
+.article-footer p:nth-child(2) {
+    font-size: 1.3rem;
+    color: rgb(52, 52, 52);
 }
 
 .article-contents img {
