@@ -8,6 +8,23 @@
 	
 	/////////////////////////////////////////////////////////
 	// 일반함수
+    
+    // setLayout: window창 크기에 대한 section 사이즈 영역 설정
+    // - parameter: x
+    // - return: x
+    const setLayout = function() {
+        // section 사이즈조정
+        const sectionHeight = window.innerHeight * 0.9;
+        document.querySelector('section').style.height = `${sectionHeight}px`;
+
+        // article 사이즈조정
+        const articleHeight = window.innerHeight * 0.3;
+        document.querySelector('article').style.height = `${articleHeight}px`;
+
+        // article내 img 사이즈 조정
+        const imgHeight = articleHeight * 0.5;
+        document.querySelector('.article-contents img').style.height = `${imgHeight}px`;
+    }
 	
 	// appearNavLine: 스크롤 발생시 nav 하단에 회색줄이 보이도록 설정
     // - parameter: x
@@ -39,6 +56,7 @@
     window.addEventListener("load", () => {
         document.querySelector('.global-nav').id = 'fqa-nav';
         
+        setLayout();
         activeAnswer(0);
     })
 

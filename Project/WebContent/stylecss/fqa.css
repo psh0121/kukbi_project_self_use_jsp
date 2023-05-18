@@ -17,11 +17,9 @@
 
 section {
     padding-top: 140px;
-    min-height: 80vh;
 }
 
 article {
-    height: 30vh;
     background-color: rgb(239, 246, 243);
 }
 
@@ -79,6 +77,7 @@ article {
     font-size: 2rem;
     font-weight: bold;
     color: rgb(52, 52, 52);
+    line-height: 1.4em;
 }
 
 .article-header p:nth-child(2) {
@@ -96,10 +95,6 @@ article {
 .article-footer p:nth-child(2) {
     font-size: 1.3rem;
     color: rgb(52, 52, 52);
-}
-
-.article-contents img {
-    width: 18vh;
 }
 
 #fqa-nav {
