@@ -77,4 +77,9 @@
             activeAnswer(i);
         })
     }
+    
+    // article영역 이벤트
+    document.querySelector('article').addEventListener("click", () => {
+        location.href = './contact.jsp';
+    })
 })();
