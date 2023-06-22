@@ -15,7 +15,9 @@
 	<%@ include file="./fixJSP/header.jsp" %>
 	
 	<!-- section -->
-	test...
+	<section>
+		test...
+	</section>
 	
 	<!-- footer -->
 	<%@ include file="./fixJSP/footer.jsp" %>
