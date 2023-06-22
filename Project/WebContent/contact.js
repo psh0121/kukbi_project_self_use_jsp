@@ -29,4 +29,9 @@
 	window.addEventListener("scroll", () => {
         appearNavLine();
     })
+    
+    // 글쓰기 버튼 이벤트
+    document.querySelector('#btn-write').addEventListener("click", () => {
+        window.location.href = './contact_text.html';
+    })
 })();
