@@ -14,8 +14,10 @@
 	<!-- header -->
 	<%@ include file="./fixJSP/header.jsp" %>
 	
-	<!-- section0 -->
-	<p>hi hello</p>
+	<!-- section -->
+	<section>
+		test...
+	</section>
 	
 	<!-- footer -->
 	<%@ include file="./fixJSP/footer.jsp" %>
