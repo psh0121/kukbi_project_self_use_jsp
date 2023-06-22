@@ -32,6 +32,6 @@
     
     // 글쓰기 버튼 이벤트
     document.querySelector('#btn-write').addEventListener("click", () => {
-        window.location.href = './contact_text.html';
+        window.location.href = './contact_text.jsp';
     })
 })();
