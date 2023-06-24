@@ -24,10 +24,45 @@ section {
     padding-top: 140px;
 }
 
+table {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 2em;
+}
+
+th {
+    width: 15%;
+    padding: 0.7em;
+}
+
+.section-title {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+    padding-bottom: 1.5em;
+}
+
+.section-contents {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-contents-btn {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
 #contact_text-nav {
     position: fixed;
     left: 0;
     top: 0;
     width: 100% auto;
     background-color: white;
+}
+
+/* test */
+table, tr, td, th {
+    border: solid 1px black;
 }

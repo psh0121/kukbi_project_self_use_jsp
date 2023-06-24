@@ -16,7 +16,38 @@
 	
 	<!-- section -->
 	<section>
-		test...
+		<p class="section-title">글쓰기</p>
+
+        <!-- contents -->
+        <div class="section-contents">
+            <table>
+                <tr>
+                    <th>제목</th>  
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <th>작성자</th>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <th>분류</th>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td>test</td>
+                </tr>
+            </table>
+
+            <div class="section-contents-btn">
+                <input type="button" value="작성" id="btn-finish">
+                <input type="button" value="취소" id="btn-cancel">
+            </div>
+        </div>
 	</section>
 	
 	<!-- footer -->
