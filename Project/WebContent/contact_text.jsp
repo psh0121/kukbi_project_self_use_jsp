@@ -43,6 +43,7 @@
                     <th>분류</th>
                     <td>
                         <select id="ct-select">
+                        	<option value="basic" selected="selected">--- 해당하는 항목을 선택해주세요 ---</option>
                             <option value="notice">공지</option>
                             <option value="inquiry">문의</option>
                             <option value="report">신고</option>
