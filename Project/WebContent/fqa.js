@@ -25,6 +25,18 @@
         const imgHeight = articleHeight * 0.5;
         document.querySelector('.article-contents img').style.height = `${imgHeight}px`;
     }
+    
+    // setBodyHight: 무한으로 내려가는 스크롤을 막기 위해 내용의 길이만큼 body의 높이를 설정
+    // - parameter: x
+    // - return: x
+    const setBodyHight = function() {
+    	const sectionH = Number(document.querySelector('section').style.height.replace('px', ''));
+    	const articleH = Number(document.querySelector('article').style.height.replace('px', ''));
+    	const footerH = Number(document.querySelector('footer').style.height.replace('px', ''));
+    	
+    	console.log(sectionH);
+    	document.querySelector('body').style.height = `${sectionH + articleH + footerH}px`;
+    }
 	
 	// appearNavLine: 스크롤 발생시 nav 하단에 회색줄이 보이도록 설정
     // - parameter: x
@@ -57,6 +69,7 @@
         document.querySelector('.global-nav').id = 'fqa-nav';
         document.querySelectorAll('.qa')[0].classList.add('active');
         setLayout();
+        setBodyHight();
         activeAnswer(0);
     })
 
