@@ -23,23 +23,37 @@
             <table>
                 <tr>
                     <th>제목</th>  
-                    <td>test</td>
+                    <td>
+                    	<input type="text" id="ct-title">
+                    </td>
                 </tr>
                 <tr>
                     <th>작성자</th>
-                    <td>test</td>
+                    <td>
+                    	<input type="text" id="ct-writter">
+                    </td>
                 </tr>
                 <tr>
                     <th>비밀번호</th>
-                    <td>test</td>
+                    <td>
+                    	<input type="password" id="ct-pwd">
+                    </td>
                 </tr>
                 <tr>
                     <th>분류</th>
-                    <td>test</td>
+                    <td>
+                        <select id="ct-select">
+                            <option value="notice">공지</option>
+                            <option value="inquiry">문의</option>
+                            <option value="report">신고</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <th>내용</th>
-                    <td>test</td>
+                    <td>
+                    	<textarea name="" id="" cols="30" rows="10"></textarea>
+                    </td>
                 </tr>
             </table>
 
