@@ -23,7 +23,7 @@
 	
 	<!-- section -->
     <section>
-        <p class="section-title">자주 묻는 질문</p>
+        <p class="section-title">자주 하는 질문</p>
 
         <!-- contents -->
         <div class="section-contents">
