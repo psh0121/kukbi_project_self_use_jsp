@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
+
+<%@ page import="DBPKG.DBConnection" %>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,44 +27,41 @@
 
         <!-- contents -->
         <div class="section-contents">
-            <div class="qa active">
-                <div class="question">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="answer">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Tempora ipsum repudiandae tempore ut nulla nostrum et id quae nihil ullam? Saepe, aspernatur fugit! 
-                        Voluptatem repellendus repellat deserunt officiis dolore fugiat?
-                    </p>
-                </div>
-            </div>
+        
+<%
+Connection conn = null;
+Statement stmt = null;
+ResultSet rset = null;
 
-            <div class="qa">
-                <div class="question">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="answer">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Tempora ipsum repudiandae tempore ut nulla nostrum et id quae nihil ullam? Saepe, aspernatur fugit! 
-                        Voluptatem repellendus repellat deserunt officiis dolore fugiat?
-                    </p>
-                </div>
+String question = "";
+String answer = "";
+        
+String sql = "select * from fqa_db order by num_id asc";        
+        
+try {
+	conn = DBConnection.getConnection();
+	stmt = conn.createStatement();
+	rset = stmt.executeQuery(sql);
+	
+	while(rset.next()){
+		question = rset.getString("question");
+		answer = rset.getString("answer");
+		
+		answer = answer.replaceAll("\n", "<br>");
+%>
+			<div class="qa">
+                <div class="question"><p><%= question %></p></div>
+                <div class="answer"><p><%= answer %></p></div>
             </div>
+<%		
+	}
+}
 
-            <div class="qa">
-                <div class="question">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="answer">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Tempora ipsum repudiandae tempore ut nulla nostrum et id quae nihil ullam? Saepe, aspernatur fugit! 
-                        Voluptatem repellendus repellat deserunt officiis dolore fugiat?
-                    </p>
-                </div>
-            </div>
+catch(Exception e) {
+	System.out.println("[Error]" + e.getMessage());
+}
+        
+%>
         </div>
     </section>
     

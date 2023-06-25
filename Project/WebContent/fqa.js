@@ -55,7 +55,7 @@
 	// 로딩된 후에 발생되는 이벤트
     window.addEventListener("load", () => {
         document.querySelector('.global-nav').id = 'fqa-nav';
-        
+        document.querySelectorAll('.qa')[0].classList.add('active');
         setLayout();
         activeAnswer(0);
     })
