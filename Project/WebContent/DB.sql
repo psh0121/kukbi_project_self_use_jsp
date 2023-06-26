@@ -7,10 +7,25 @@ create table fqa_db(
 	answer varchar2(1500) not null
 );
 
+-- 고객센터DB
+create table contact_db(
+	num_id number(5) not null primary key,
+	title varchar2(100) not null,
+	writer varchar2(20) not null,
+	pwd varchar2(20),
+	division varchar2(20) not null,
+	content varchar2(2000) not null,
+	create_date date not null,
+	answer_flag varchar(2) not null
+);
+
 -- 시퀀스 생성 -------------------------------------------------------------------------
 
 -- 자주묻는질문DB id auto increment
 create sequence fqa_db_seq start with 1 increment by 1 maxvalue 99 cycle nocache;
+
+-- 고객센터DB id auto increment
+create sequence contact_db_seq start with 1 increment by 1 maxvalue 99999 cycle nocache;
 
 -- 내용 삽입 -------------------------------------------------------------------------
 
@@ -35,4 +50,33 @@ insert into fqa_db values (fqa_db_seq.nextval,
 	저희 앱 자체에는 무분별한 신고를 방지하기 위해 신고 기능이 존재하지 않습니다.
 	단, 고객님이 [메이트 모집/긴급 메이트 모집]을 통해 여행에 참가한 기록과(캡처 본) 있었던 일에 대해 작성해 주시면 신중히 파악해 조치를 취하도록 하겠습니다.
 	내용은 웹사이트에 있는 고객센터를 이용해 주시거나 inquiry@travel.im로 보내주시면 됩니다.'
+);
+
+-- 고객센터DB
+insert into contact_db values (contact_db_seq.nextval,
+	'[필독] 고객센터를 이용하시기 전 반드시 확인해주세요.',
+	'관리자',
+	'rhksflwk',
+	'공지',
+	'내용입니다.',
+	sysdate,
+	'false'
+);
+insert into contact_db values (contact_db_seq.nextval,
+	'문의드릴게 있습니다.',
+	'홍길동',
+	'ghdrlfehd',
+	'문의',
+	'내용입니다.',
+	sysdate,
+	'false'
+);
+insert into contact_db values (contact_db_seq.nextval,
+	'신고합니다.',
+	'찰스',
+	'ckftm',
+	'신고',
+	'내용입니다.',
+	sysdate,
+	'false'
 );
