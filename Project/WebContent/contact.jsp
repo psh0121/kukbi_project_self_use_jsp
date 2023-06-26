@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
+
+<%@ page import="java.util.Date" %>
+<%@ page import="DBPKG.DBConnection" %>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,94 +43,77 @@
                     <th class="tbl-date">날짜</th>
                     <th class="tbl-reply">답변여부</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
+<%
+Connection conn = null;
+Statement stmt = null;
+ResultSet rsetOnlyNotice = null;
+ResultSet rsetNotNotice = null;
+
+int numID = 0;
+String title = "";
+String writer = "";
+String pwd = "";
+String division = "";
+String content = "";
+Date createDate = null;
+String answerFlag = "";
+String protectFlag = "";
+
+String sqlOnlyNotice = "select * from contact_db where division='공지' order by create_date desc";
+String sqlNotNotice = "select * from contact_db where not division='공지' order by create_date desc";
+
+try {
+	conn = DBConnection.getConnection();
+	stmt = conn.createStatement();
+	rsetOnlyNotice = stmt.executeQuery(sqlOnlyNotice);
+	
+	while(rsetOnlyNotice.next()) {
+		numID = rsetOnlyNotice.getInt("num_id");
+		title = rsetOnlyNotice.getString("title");
+		writer = rsetOnlyNotice.getString("writer");
+		division = rsetOnlyNotice.getString("division");
+		createDate = rsetOnlyNotice.getDate("create_date");
+		answerFlag = rsetOnlyNotice.getString("answer_flag");
+%>
+				<tr>
+                    <td><%= numID %></td>
+                    <td><%= division %></td>
+                    <td><%= title %></td>
+                    <td><%= writer %></td>
+                    <td><%= createDate %></td>
+                    <td><%= answerFlag %></td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
+<%
+	}
+	
+	rsetNotNotice = stmt.executeQuery(sqlNotNotice);
+	
+	while(rsetNotNotice.next()) {
+		numID = rsetNotNotice.getInt("num_id");
+		title = rsetNotNotice.getString("title");
+		writer = rsetNotNotice.getString("writer");
+		division = rsetNotNotice.getString("division");
+		createDate = rsetNotNotice.getDate("create_date");
+		answerFlag = rsetNotNotice.getString("answer_flag");
+%>
+				<tr>
+                    <td><%= numID %></td>
+                    <td><%= division %></td>
+                    <td><%= title %></td>
+                    <td><%= writer %></td>
+                    <td><%= createDate %></td>
+                    <td><%= answerFlag %></td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>공지</td>
-                    <td>테스트중입니다.</td>
-                    <td>홍길동</td>
-                    <td>2023-06-01</td>
-                    <td>답변전</td>
-                </tr>
+<%		
+	}
+	
+}
+
+catch(Exception e) {
+	System.out.println("[Error]" + e.getMessage());
+}
+%>                
+                
             </table>
 
             <div class="section-contents-btn1">

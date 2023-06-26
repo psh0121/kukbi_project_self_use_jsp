@@ -20,9 +20,6 @@
 	// 로딩된 후에 발생되는 이벤트
     window.addEventListener("load", () => {
         document.querySelector('.global-nav').id = 'contact-nav';
-        
-        setLayout();
-        activeAnswer(0);
     })
 	
 	// 스크롤을 진행했을시에 발생되는 이벤트

@@ -12,11 +12,12 @@ create table contact_db(
 	num_id number(5) not null primary key,
 	title varchar2(100) not null,
 	writer varchar2(20) not null,
-	pwd varchar2(20),
+	pwd varchar2(20) not null,
 	division varchar2(20) not null,
 	content varchar2(2000) not null,
 	create_date date not null,
-	answer_flag varchar(2) not null
+	answer_flag varchar(2) not null,
+	protect_flag varchar(2) not null
 );
 
 -- 시퀀스 생성 -------------------------------------------------------------------------
@@ -60,6 +61,7 @@ insert into contact_db values (contact_db_seq.nextval,
 	'공지',
 	'내용입니다.',
 	sysdate,
+	'F',
 	'F'
 );
 insert into contact_db values (contact_db_seq.nextval,
@@ -69,6 +71,7 @@ insert into contact_db values (contact_db_seq.nextval,
 	'문의',
 	'내용입니다.',
 	sysdate,
+	'F',
 	'F'
 );
 insert into contact_db values (contact_db_seq.nextval,
@@ -78,5 +81,6 @@ insert into contact_db values (contact_db_seq.nextval,
 	'신고',
 	'내용입니다.',
 	sysdate,
-	'F'
+	'F',
+	'T'
 );
