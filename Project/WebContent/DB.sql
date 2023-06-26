@@ -60,7 +60,7 @@ insert into contact_db values (contact_db_seq.nextval,
 	'공지',
 	'내용입니다.',
 	sysdate,
-	'false'
+	'F'
 );
 insert into contact_db values (contact_db_seq.nextval,
 	'문의드릴게 있습니다.',
@@ -69,7 +69,7 @@ insert into contact_db values (contact_db_seq.nextval,
 	'문의',
 	'내용입니다.',
 	sysdate,
-	'false'
+	'F'
 );
 insert into contact_db values (contact_db_seq.nextval,
 	'신고합니다.',
@@ -78,5 +78,5 @@ insert into contact_db values (contact_db_seq.nextval,
 	'신고',
 	'내용입니다.',
 	sysdate,
-	'false'
+	'F'
 );
