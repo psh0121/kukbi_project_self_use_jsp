@@ -19,18 +19,22 @@
     // - return: x
     const showInfo = function(category) {
         let categoryObj = {
-            'notice': document.querySelector('.notice-content'),
-            'inquiry': document.querySelector('.inquiry-content'),
-            'report': document.querySelector('.report-content')
+            'notice': document.querySelectorAll('.notice-content'),
+            'inquiry': document.querySelectorAll('.inquiry-content'),
+            'report': document.querySelectorAll('.report-content')
         };
 
-        for(let [key, doc] of Object.entries(categoryObj)) {
+        for(let [key, docs] of Object.entries(categoryObj)) {
             if(key === category) {
-                doc.style.display = '';
+            	for(let doc = 0; doc < docs.length; doc++) {
+                    docs[doc].style.display = '';
+                }
             }
 
             else {
-                doc.style.display = 'none';
+                for(let doc = 0; doc < docs.length; doc++) {
+                    docs[doc].style.display = 'none';
+                }
             }
         }
     }
@@ -50,17 +54,14 @@
 
     // 공지, 문의, 신고버튼 이벤트
     document.querySelector(".notice-btn").addEventListener("click", () => {
-        console.log('공지');
         showInfo('notice');
     })
 
     document.querySelector(".inquiry-btn").addEventListener("click", () => {
-        console.log('문의');
         showInfo('inquiry');
     })
 
     document.querySelector(".report-btn").addEventListener("click", () => {
-        console.log('신고');
         showInfo('report');
     })
 
