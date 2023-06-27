@@ -22,27 +22,6 @@
 	<!-- header -->
 	<%@ include file="./fixJSP/header.jsp" %>
 	
-	<!-- section -->
-	<section>
-		<p class="section-title">고객센터</p>
-
-        <!-- contents -->
-        <div class="section-contents">
-            <div class="section-contents-title">
-                <p>공지</p>
-                <p>문의</p>
-                <p>신고</p>
-            </div>
-
-            <table>
-                <tr>
-                    <th class="tbl-num">번호</th>
-                    <th class="tbl-seperate">분류</th>
-                    <th class="tbl-title">제목</th>
-                    <th class="tbl-auth">작성자</th>
-                    <th class="tbl-date">날짜</th>
-                    <th class="tbl-reply">답변여부</th>
-                </tr>
 <%
 Connection conn = null;
 Statement stmt = null;
@@ -61,33 +40,58 @@ String protectFlag = "";
 
 String sqlOnlyNotice = "select * from contact_db where division='공지' order by create_date desc";
 String sqlNotNotice = "select * from contact_db where not division='공지' order by create_date desc";
+%>
+	
+	<!-- section -->
+	<section>
+		<p class="section-title">고객센터</p>
 
+        <!-- contents -->
+        <div class="section-contents">
+            <div class="section-contents-title">
+                <p class="notice-btn">공지</p>
+                <p class="inquiry-btn">문의</p>
+                <p class="report-btn">신고</p>
+            </div>
+
+            <table>
+                <tr>
+                    <th class="tbl-num">번호</th>
+                    <th class="tbl-seperate">분류</th>
+                    <th class="tbl-title">제목</th>
+                    <th class="tbl-auth">작성자</th>
+                    <th class="tbl-date">날짜</th>
+                    <th class="tbl-reply">답변</th>
+                </tr>
+
+<%
 try {
 	conn = DBConnection.getConnection();
 	stmt = conn.createStatement();
 	rsetOnlyNotice = stmt.executeQuery(sqlOnlyNotice);
 	
+	// 공지
 	while(rsetOnlyNotice.next()) {
 		numID = rsetOnlyNotice.getInt("num_id");
 		title = rsetOnlyNotice.getString("title");
 		writer = rsetOnlyNotice.getString("writer");
 		division = rsetOnlyNotice.getString("division");
 		createDate = rsetOnlyNotice.getDate("create_date");
-		answerFlag = rsetOnlyNotice.getString("answer_flag");
 %>
-				<tr>
+				<tr class="notice-content">
                     <td><%= numID %></td>
                     <td><%= division %></td>
                     <td><%= title %></td>
                     <td><%= writer %></td>
                     <td><%= createDate %></td>
-                    <td><%= answerFlag %></td>
+                    <td>공지글</td>
                 </tr>
 <%
 	}
 	
 	rsetNotNotice = stmt.executeQuery(sqlNotNotice);
 	
+	// 공지제외 나머지(문의, 신고)
 	while(rsetNotNotice.next()) {
 		numID = rsetNotNotice.getInt("num_id");
 		title = rsetNotNotice.getString("title");
@@ -95,8 +99,13 @@ try {
 		division = rsetNotNotice.getString("division");
 		createDate = rsetNotNotice.getDate("create_date");
 		answerFlag = rsetNotNotice.getString("answer_flag");
+		
+		if(answerFlag == "T") answerFlag = "답변완료";
+		else answerFlag = "답변전";
+		
+		if(division.equals("문의")) {
 %>
-				<tr>
+				<tr class="inquiry-content">
                     <td><%= numID %></td>
                     <td><%= division %></td>
                     <td><%= title %></td>
@@ -104,9 +113,21 @@ try {
                     <td><%= createDate %></td>
                     <td><%= answerFlag %></td>
                 </tr>
-<%		
+<%			
+		}
+		else if(division.equals("신고")) {
+%>
+				<tr class="report-content">
+                    <td><%= numID %></td>
+                    <td><%= division %></td>
+                    <td><%= title %></td>
+                    <td><%= writer %></td>
+                    <td><%= createDate %></td>
+                    <td><%= answerFlag %></td>
+                </tr>
+<%			
+		}				
 	}
-	
 }
 
 catch(Exception e) {
