@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,45 +21,50 @@
 
         <!-- contents -->
         <div class="section-contents">
-            <table>
-                <tr>
-                    <th>제목</th>  
-                    <td>
-                    	<input type="text" id="ct-title">
-                    </td>
-                </tr>
-                <tr>
-                    <th>작성자</th>
-                    <td>
-                    	<input type="text" id="ct-writter">
-                    </td>
-                </tr>
-                <tr>
-                    <th>비밀번호</th>
-                    <td>
-                    	<input type="password" id="ct-pwd">
-                    	<input type="checkbox" id="ct-protect">
-                    	<label for="ct-protect">관리자외 비공개모드로 전환합니다</label>
-                    </td>
-                </tr>
-                <tr>
-                    <th>분류</th>
-                    <td>
-                        <select id="ct-select">
-                        	<option value="basic" selected="selected">--- 해당하는 항목을 선택해주세요 ---</option>
-                            <option value="notice">공지</option>
-                            <option value="inquiry">문의</option>
-                            <option value="report">신고</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th>내용</th>
-                    <td>
-                    	<textarea name="" id="" cols="30" rows="10"></textarea>
-                    </td>
-                </tr>
-            </table>
+            <form method="post" id="frm_write" name="frmWrite">
+                <table>
+                    <tr>
+                        <th>제목</th>  
+                        <td>
+                            <input type="text" id="ct-title" name="ctTitle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>작성자</th>
+                        <td>
+                            <input type="text" id="ct-writer" name="ctWriter">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td>
+                            <input type="password" id="ct-pwd" name="ctPwd">
+                            <input type="checkbox" id="ct-protect" name="ctProtect">
+                            <label for="ct-protect">관리자외 비공개모드로 전환합니다</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>분류</th>
+                        <td>
+                            <select id="ct-select" name="ctSelect">
+                                <option value="basic" selected="selected">--- 해당하는 항목을 선택해주세요 ---</option>
+                                <option value="notice">공지</option>
+                                <option value="inquiry">문의</option>
+                                <option value="report">신고</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td>
+                            <textarea id="ct-content" name="ctContent" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+
+            
 
             <div class="section-contents-btn">
                 <input type="button" value="작성" id="btn-finish">
