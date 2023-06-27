@@ -66,6 +66,10 @@ td {
     background-color: white;
 }
 
+#ct-protect {
+	margin-left: 3em;
+}
+
 /* test */
 table, tr, td, th {
     border: solid 1px black;

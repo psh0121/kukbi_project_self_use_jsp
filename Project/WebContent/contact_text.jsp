@@ -37,6 +37,8 @@
                     <th>비밀번호</th>
                     <td>
                     	<input type="password" id="ct-pwd">
+                    	<input type="checkbox" id="ct-protect">
+                    	<label for="ct-protect">관리자외 비공개모드로 전환합니다</label>
                     </td>
                 </tr>
                 <tr>
