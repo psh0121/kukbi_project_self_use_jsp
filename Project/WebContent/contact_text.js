@@ -1,6 +1,7 @@
 (() => {
 
     const btnFinish = document.querySelector('#btn-finish');
+    const btnCancel = document.querySelector('#btn-cancel');
 
     const objsArr = [
         {
@@ -112,5 +113,10 @@
         }
 
         alert("성공");
+    })
+
+    // 취소버튼 클릭 이벤트
+    btnCancel.addEventListener("click", () => {
+        history.back();
     })
 })();
