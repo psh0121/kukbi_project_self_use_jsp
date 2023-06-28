@@ -2,6 +2,7 @@
 
     const btnFinish = document.querySelector('#btn-finish');
     const btnCancel = document.querySelector('#btn-cancel');
+    const frmWrite = document.querySelector('#frm-write');
 
     const objsArr = [
         {
@@ -112,7 +113,7 @@
             return;
         }
 
-        alert("성공");
+        frmWrite.submit();
     })
 
     // 취소버튼 클릭 이벤트

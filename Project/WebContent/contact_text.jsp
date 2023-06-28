@@ -21,7 +21,7 @@
 
         <!-- contents -->
         <div class="section-contents">
-            <form method="post" id="frm_write" name="frmWrite">
+            <form action="contact_text_send.jsp" method="post" id="frm-write" name="frmWrite">
                 <table>
                     <tr>
                         <th>제목</th>  
