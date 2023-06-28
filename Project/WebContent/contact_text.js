@@ -62,6 +62,23 @@
 
         return result;
     }
+
+    // checkValid: 작성버튼전 유효성검사
+    // - parameter: x
+    // - return: 유효성 검사에 문제가 없었는지(true) / 문제 발생시 해당위치(숫자)
+    const checkValid = function() {
+        let result = true;
+
+        for(let i = 0; i < objsArr.length; i++) {
+            if(objsArr[i].size === null) break;
+
+            if(objsArr[i].elem.value.length > objsArr[i].size) return i;
+        }
+
+        if(objsArr[3].elem.value === 'basic') return 3;
+
+        return result;
+    }
     
 	/////////////////////////////////////////////////////////
 	// 이벤트 핸들러
@@ -85,5 +102,15 @@
             objsArr[result].elem.focus();
             return;
         }
+
+        result = checkValid();
+
+        if(result !== true) {
+            alert(objsArr[result].validMsg);
+            objsArr[result].elem.focus();
+            return;
+        }
+
+        alert("성공");
     })
 })();
