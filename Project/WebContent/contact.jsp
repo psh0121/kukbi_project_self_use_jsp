@@ -77,6 +77,7 @@ try {
 		writer = rsetOnlyNotice.getString("writer");
 		division = rsetOnlyNotice.getString("division");
 		createDate = rsetOnlyNotice.getDate("create_date");
+
 %>
 				<tr class="notice-content">
                     <td><%= numID %></td>
