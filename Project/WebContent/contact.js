@@ -70,7 +70,8 @@
     // table안에 있는 내용의 제목 클릭시
     for(let i = 1; i < trTag.length; i++) {
         trTag[i].querySelectorAll('td')[2].addEventListener("click", () => {
-            window.location.href = './contact_text.jsp';
+            window.location.href = './contact_inquiry.jsp?numId=' + 
+                                    trTag[i].querySelectorAll('td')[0].textContent;
         })
     }
 
