@@ -41,6 +41,8 @@
 	
 	/////////////////////////////////////////////////////////
 	// 이벤트 핸들러
+
+    const trTag = document.querySelectorAll('table tbody tr');
 	
 	// 로딩된 후에 발생되는 이벤트
     window.addEventListener("load", () => {
@@ -64,6 +66,13 @@
     document.querySelector(".report-btn").addEventListener("click", () => {
         showInfo('report');
     })
+
+    // table안에 있는 내용의 제목 클릭시
+    for(let i = 1; i < trTag.length; i++) {
+        trTag[i].querySelectorAll('td')[2].addEventListener("click", () => {
+            window.location.href = './contact_text.jsp';
+        })
+    }
 
     // 글쓰기 버튼 이벤트
     document.querySelector('#btn-write').addEventListener("click", () => {
