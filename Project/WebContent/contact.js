@@ -71,7 +71,7 @@
     for(let i = 1; i < trTag.length; i++) {
         trTag[i].querySelectorAll('td')[2].addEventListener("click", () => {
             window.location.href = './contact_inquiry.jsp?numId=' + 
-                                    trTag[i].querySelectorAll('td')[0].textContent;
+                                    trTag[i].querySelectorAll('td')[0].textContent;                                    
         })
     }
 
