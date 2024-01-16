@@ -24,6 +24,7 @@ request.setCharacterEncoding("UTF-8");
 String numId = request.getParameter("numId");
 String pwd = "";
 String protectFlag = "";
+String division = "";
 
 String sql = "select * from contact_db where num_id=" + numId;
 
@@ -34,6 +35,7 @@ try {
 	
 	while(rset.next()) {
 		pwd = rset.getString("pwd");
+		division = rset.getString("division");
 		//protectFlag = rset.getString("protect_flag");
 	}
 }
@@ -50,14 +52,20 @@ catch(Exception e) {
 
     // 로딩된 후에 발생되는 이벤트
     window.addEventListener("load", () => {
-        const inputPwd = prompt("비밀번호를 입력해주세요", undefined);
-        
-        if(inputPwd !== '<%= pwd %>') {
-            alert("입력한 비밀번호가 다릅니다.");
-            history.back();
+        // 해당글이 공지일 경우 비밀번호 입력없이 바로 접근할 수 있도록 한다
+        if('<%= division %>' === '공지') {
+            window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
         }
         else {
-            window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
+            const inputPwd = prompt("비밀번호를 입력해주세요", undefined);
+        
+            if(inputPwd !== '<%= pwd %>') {
+                alert("입력한 비밀번호가 다릅니다.");
+                history.back();
+            }
+            else {
+                window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
+            }
         }
     })
 })();
