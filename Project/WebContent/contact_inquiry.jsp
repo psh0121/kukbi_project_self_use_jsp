@@ -108,7 +108,12 @@ catch(Exception e)
                         </td>
                     </tr>
                 </table>            
-
+                
+            <div class="section-writter-btn">
+            	<input type="button" value="답변하기" id="btn-answer"> 
+            	<input type="button" value="수정하기" id="btn-modify">
+            </div>
+                
             <div class="section-contents-btn">
                 <input type="button" value="목록으로" id="btn-toList">
             </div>
