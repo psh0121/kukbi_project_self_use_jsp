@@ -36,7 +36,7 @@ try {
 	while(rset.next()) {
 		pwd = rset.getString("pwd");
 		division = rset.getString("division");
-		//protectFlag = rset.getString("protect_flag");
+		protectFlag = rset.getString("protect_flag");
 	}
 }
 
@@ -54,6 +54,10 @@ catch(Exception e) {
     window.addEventListener("load", () => {
         // 해당글이 공지일 경우 비밀번호 입력없이 바로 접근할 수 있도록 한다
         if('<%= division %>' === '공지') {
+            window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
+        }
+        // 해당글이 공개로 설정되어있을 경우 비밀번호 입력없이 바로 접근할 수 있도록 한다
+        else if('<%= protectFlag %>' == 'F') {
             window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
         }
         else {
