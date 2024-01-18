@@ -1,6 +1,8 @@
 (() => {
 
     const btnToList = document.querySelector('#btn-toList');
+    const btnAnswer = document.querySelector('#btn-answer');
+    const btnModify = document.querySelector('#btn-modify');
 
 	///////////////////////////////////////////////////////
 	// 일반함수
@@ -16,6 +18,15 @@
             document.querySelector('nav').style.borderBottom = '1px solid lightgray';
         }
     }
+
+    // getNumId: url에있는 numId의 값을 가져와 리턴한다
+    // - parameter: x
+    // - return: numId 값
+    const getNumId = function() {
+        const url = new URL(window.location.href);
+        const result = url.searchParams.get("numId");
+        return result;
+    }
     
 	/////////////////////////////////////////////////////////
 	// 이벤트 핸들러
@@ -28,6 +39,18 @@
     // 스크롤을 진행했을시에 발생되는 이벤트
     window.addEventListener("scroll", () => {
         appearNavLine();
+    })
+
+    // 답변하기버튼 클릭 이벤트
+    btnAnswer.addEventListener("click", () => {
+        alert("답변하기버튼 클릭");
+    })
+
+    // 수정하기버튼 클릭 이벤트
+    btnModify.addEventListener("click", () => {
+        const numId = getNumId();
+        
+        window.location.href = './contact_modify.jsp?numId=' + numId;
     })
 
     // 목록버튼 클릭 이벤트
