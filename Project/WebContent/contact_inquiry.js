@@ -55,6 +55,7 @@
 
     // 목록버튼 클릭 이벤트
     btnToList.addEventListener("click", () => {
+        window.location.href = './contact.jsp';
         history.back();
     })
 })();
