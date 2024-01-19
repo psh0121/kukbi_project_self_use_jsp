@@ -50,7 +50,7 @@
     btnModify.addEventListener("click", () => {
         const numId = getNumId();
         
-        window.location.href = './contact_modify.jsp?numId=' + numId;
+        window.location.href = './contact_send.jsp?type=modify&numId=' + numId;
     })
 
     // 목록버튼 클릭 이벤트

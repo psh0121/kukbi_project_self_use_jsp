@@ -22,6 +22,7 @@ ResultSet rset = null;
 request.setCharacterEncoding("UTF-8");
 
 String numId = request.getParameter("numId");
+String type = request.getParameter("type");
 String pwd = "";
 String protectFlag = "";
 String division = "";
@@ -52,23 +53,42 @@ catch(Exception e) {
 
     // 로딩된 후에 발생되는 이벤트
     window.addEventListener("load", () => {
-        // 해당글이 공지일 경우 비밀번호 입력없이 바로 접근할 수 있도록 한다
-        if('<%= division %>' === '공지') {
-            window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
+
+        let inputPwd = null;
+
+        // 조회
+        if('<%= type %>' === 'inquiry') {
+            // 해당글이 공지일 경우 비밀번호 입력없이 바로 접근할 수 있도록 한다
+            if('<%= division %>' === '공지') {
+                window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
+            }
+            // 해당글이 공개로 설정되어있을 경우 비밀번호 입력없이 바로 접근할 수 있도록 한다
+            else if('<%= protectFlag %>' == 'F') {
+                window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
+            }
+            else {
+                inputPwd = prompt("비밀번호를 입력해주세요", undefined);
+            
+                if(inputPwd !== '<%= pwd %>') {
+                    alert("입력한 비밀번호가 다릅니다.");
+                    history.back();
+                }
+                else {
+                    window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
+                }
+            }
         }
-        // 해당글이 공개로 설정되어있을 경우 비밀번호 입력없이 바로 접근할 수 있도록 한다
-        else if('<%= protectFlag %>' == 'F') {
-            window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
-        }
-        else {
-            const inputPwd = prompt("비밀번호를 입력해주세요", undefined);
-        
+
+        // 수정
+        if('<%= type %>' === 'modify') {
+            inputPwd = prompt("비밀번호를 입력해주세요", undefined);
+            
             if(inputPwd !== '<%= pwd %>') {
                 alert("입력한 비밀번호가 다릅니다.");
                 history.back();
             }
             else {
-                window.location.href = "./contact_inquiry.jsp?numId=" + '<%= numId %>';
+                window.location.href = "./contact_modify.jsp?numId=" + '<%= numId %>';
             }
         }
     })
