@@ -6,14 +6,7 @@
 
 ---
 <p align="center">
-<img src="https://img.shields.io/badge/Version-v 1.0.0-c86758?style=flat
-"> 
-<img src="https://img.shields.io/badge/JAVA-v 18.0.2.1-blue?style=flat
-"> 
-<img src="https://img.shields.io/badge/ORACLE-v%2011.2.0.2.0-F80000?style=flat
-"> 
-<img src="https://img.shields.io/badge/Apache%20Tomcat-v%208.5-F8DC75?style=flat
-"> 
+<img src="https://img.shields.io/badge/Version-v 1.0.0-c86758?style=flat"> <img src="https://img.shields.io/badge/JAVA-v 18.0.2.1-blue?style=flat"> <img src="https://img.shields.io/badge/ORACLE-v%2011.2.0.2.0-F80000?style=flat"> <img src="https://img.shields.io/badge/Apache%20Tomcat-v%208.5-F8DC75?style=flat"> 
 </p>
 
 ---
