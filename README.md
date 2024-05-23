@@ -47,6 +47,17 @@
 
 **Let's travel**는 여러분의 고민을 덜어드리기 위해 노력하겠습니다!
 
+<br>
+
 ## 🛠 스택
 
 ![stack](https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/f1880ad2-abd8-4731-8743-667d0504f533)
+
+## ⚙️ 기능 플로우
+
+### • Front-end
+![Front_workFlow](https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/f1543b70-7549-43fb-b80c-11a985b847f6)
+
+### • Back-end
+![back_workFLow](https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/48d464d2-c6de-42e1-a95f-f195fff4d153)
+
