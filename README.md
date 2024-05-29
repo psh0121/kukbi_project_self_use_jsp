@@ -84,15 +84,37 @@
           <th>section3</th>
      </tr>
      <tr>
-          <td colspan="4">
+          <td colspan="2">
                → 홈페이지를 접속하였을 때 처음 나오는 화면으로, 상단에 <code><b>홈</b></code>탭을 눌렀을 경우에도 같은 화면이 나옵니다. <br><br> → 기업에서 제작한 제품의 홍보 글이 나타나며, 스크롤 할 때마다 각 세션의 애니메이션이 작동되어 역동적인 모습을 확인할 수 있습니다.
           </td>
      </tr>
 </table>
 
 ### • 회사소개
-|GIF2| → 기업이 추구하는 방향성과 목표가 나타나있으며, ```홈``` 화면과 마찬가지로 인터랙티브한 요소들을 첨가하였습니다. <br><br> → ```회사소개``` 화면은 기존의 ```토스 기업의 '회사소개'```를 참고하여 제작되었습니다. <br><br> → [참조 링크](https://toss.im/team)
-|:---:|:---|
+<table>
+     <tr>
+          <td width="50%" ><img src="https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/0a7ea2df-d6e5-4547-a130-b7ea57024acb"></td>
+          <td width="50%" ><img src="https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/4c6c478c-fbf2-4ff0-9fbb-3c6d8bbeb5dc"></td>
+     </tr>
+     <tr>
+          <th>section0 → section1</th>
+          <th>section2</th>
+     </tr>
+     <tr>
+          <td width="50%" ><img src="https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/039fd62d-6960-4c16-92a2-b099390300d7"></td>
+          <td width="50%" ><img src="https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/e27a9dfb-202a-4e22-a57e-e825f4de964e"></td>
+     </tr>
+     <tr>
+          <th>section3</th>
+          <th>section4</th>
+     </tr>
+     <tr>
+          <td colspan="2">
+              → 기업이 추구하는 방향성과 목표가 나타나있으며, <code><b>홈</b></code> 화면과 마찬가지로 인터랙티브한 요소들을 첨가하였습니다. <br><br> → <code><b>회사소개</b></code> 화면은 기존의 <code><b>토스 기업의 '회사소개'</b></code>를 참고하여 제작되었습니다. <br><br> → <a href="https://toss.im/team">참조 링크</a>
+          </td>
+     </tr>
+</table>
+
 
 ### • 자주하는 질문
 |GIF3| → 고객들이 궁금해할 수 있는 점이나 자주 하는 질문에 대한 정보들을 정리해놓은 곳입니다. <br><br> → 고객들이 한 가지 문답에 집중할 수 있도록 정보를 얻고자 하는 질문을 클릭하였을 경우 이전에 클릭한 문답이 닫히고 현재 클릭한 질문에 대한 문답이 표시될 수 있도록 구현하였습니다. <br><br> → 또한, 해당 페이지에서 답을 얻지 못했을 경우에 하단의 배너를 클릭하면 직접 질문을 남길 수 있는 ```고객센터```로 이동 가능합니다.
