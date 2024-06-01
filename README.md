@@ -129,8 +129,23 @@
 <br>
 
 ### • 고객센터
-|GIF4| → ```고객센터```는 ```공지```, ```문의```, ```신고``` 총 3가지 탭으로 나누어져 있으며, 고객센터를 클릭하면 분류 상관없이 글이 나타나있으며 이때 분류별로 글을 확인하고 싶다면 상단에 있는 ```공지```, ```문의```, ```신고``` 버튼을 클릭하셔서 원하는 글을 클릭하시면 됩니다.
-|:---:|:---|
+<table>
+     <tr>
+          <td width="33%" ><img src="https://placehold.co/600x400"></td>
+          <td width="33%" ><img src="https://placehold.co/600x400"></td>
+          <td width="33%" ><img src="https://placehold.co/600x400"></td>
+     </tr>
+     <tr>
+          <th>section0 → section1</th>
+          <th>section2</th>
+          <th>section2</th>
+     </tr>
+     <tr>
+          <td colspan="3">
+              → <code><b>고객센터</b></code>는 <code><b>공지</b></code>, <code><b>문의</b></code>, <code><b>신고</b></code> 총 3가지 탭으로 나누어져 있으며, 고객센터를 클릭하면 분류 상관없이 천체 글이 나타날수 있도록 구성해보았으며, 이때 분류별로 글을 확인하고 싶다면 상단에 있는 <code><b>공지</b></code>, <code><b>문의</b></code>, <code><b>신고</b></code> 버튼을 클릭하셔서 원하는 글을 클릭하시면 됩니다.
+          </td>
+     </tr>
+</table>
 <br>
 
 # For project details
