@@ -131,14 +131,20 @@
 ### • 고객센터
 <table>
      <tr>
-          <td width="33%" ><img src="https://placehold.co/600x400"></td>
-          <td width="33%" ><img src="https://placehold.co/600x400"></td>
-          <td width="33%" ><img src="https://placehold.co/600x400"></td>
+          <td width="50%" ><img src="https://placehold.co/600x400"></td>
+          <td width="50%" ><img src="https://placehold.co/600x400"></td>
      </tr>
      <tr>
-          <th>section0 → section1</th>
-          <th>section2</th>
-          <th>section2</th>
+          <th>목록 조회</th>
+          <th>글쓰기</th>
+     </tr>
+     <tr>
+          <td width="50%" ><img src="https://placehold.co/600x400"></td>
+          <td width="50%" ><img src="https://placehold.co/600x400"></td>
+     </tr>
+     <tr>
+          <th>글내용 확인</th>
+          <th>수정하기</th>
      </tr>
      <tr>
           <td colspan="3">
