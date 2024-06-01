@@ -63,6 +63,9 @@ try
 		protectFlag = rset.getString("protect_flag");
 	}
 	
+	// content 줄바꿈 설
+	content = content.replace("\r\n", "<br>");
+	
 	rset.close();
 	stmt.close();
 	conn.close();
