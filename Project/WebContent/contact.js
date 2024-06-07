@@ -1,6 +1,16 @@
 (() => {
 	/////////////////////////////////////////////////////////
 	// 일반함수
+
+    // setBodyHight: 무한으로 내려가는 스크롤을 막기 위해 내용의 길이만큼 body의 높이를 설정
+    // - parameter: x
+    // - return: x
+    const setBodyHight = function() {
+        const sectionH = Number(document.querySelector('section').style.height.replace('px', ''));
+    	const footerH = Number(document.querySelector('footer').style.height.replace('px', ''));
+
+        document.querySelector('body').style.height = `${sectionH + footerH}px`;
+    }
 	
 	// appearNavLine: 스크롤 발생시 nav 하단에 회색줄이 보이도록 설정
 	// - parameter: x
@@ -47,6 +57,7 @@
 	// 로딩된 후에 발생되는 이벤트
     window.addEventListener("load", () => {
         document.querySelector('.global-nav').id = 'contact-nav';
+        setBodyHight();
     })
 	
 	// 스크롤을 진행했을시에 발생되는 이벤트

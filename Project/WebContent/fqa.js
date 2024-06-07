@@ -34,7 +34,6 @@
     	const articleH = Number(document.querySelector('article').style.height.replace('px', ''));
     	const footerH = Number(document.querySelector('footer').style.height.replace('px', ''));
     	
-    	console.log(sectionH);
     	document.querySelector('body').style.height = `${sectionH + articleH + footerH}px`;
     }
 	
