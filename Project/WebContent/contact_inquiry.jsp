@@ -106,7 +106,7 @@ catch(Exception e)
                     </tr>
                     <tr>
                         <th>내용</th>
-                        <td>
+                        <td class="section-contents-content">
                             <%= content %>
                         </td>
                     </tr>
