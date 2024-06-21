@@ -131,16 +131,16 @@
 ### • 고객센터
 <table>
      <tr>
-          <td width="50%" ><img src="https://placehold.co/600x400"></td>
-          <td width="50%" ><img src="https://placehold.co/600x400"></td>
+          <td width="50%" ><img src="https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/4547e63f-b23e-4d96-aab7-8d2318c9ed00"></td>
+          <td width="50%" ><img src="https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/2bf43cd6-bfca-4e73-b9db-55a44812e63c"></td>
      </tr>
      <tr>
           <th>목록 조회</th>
           <th>글쓰기</th>
      </tr>
      <tr>
-          <td width="50%" ><img src="https://placehold.co/600x400"></td>
-          <td width="50%" ><img src="https://placehold.co/600x400"></td>
+          <td width="50%" ><img src="https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/fa0c9092-acb9-496c-8adf-d98fe0b163a3"></td>
+          <td width="50%" ><img src="https://github.com/psh0121/kukbi_project_self_use_jsp/assets/65241463/6eb6769d-36b4-4d87-bc3e-c53b0cd38ae4"></td>
      </tr>
      <tr>
           <th>글내용 확인</th>
@@ -153,9 +153,3 @@
      </tr>
 </table>
 <br>
-
-# For project details
-### 🧚‍♀[Checkout WIKI](https://github.com/codestates/naganda-client/wiki)🧚‍♂
-### 🧚‍♀[서비스 페이지](https://naganda.tk)🧚‍♂
-
-<br/><br/><br/><br/>
